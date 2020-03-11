@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+     initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOG - one page</title>
+<style>
+
+body{
+margin: 0;
+background-color: rgb(197, 236, 243);
+}
+
+/* 滾軸效果 */
+html{
+    scroll-behavior: smooth;
+}
+a:visited{
+    color: black;
+}
+a:active .btn_s{
+    /* 編輯超連結的字型樣式 */
+    text-decoration:none;
+    color: white;
+
+    background-color: black;
+}
+
+#all{
+    width: 80%;
+    height: 100vh;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+#boxA{
+    background-image: url("pic/p1.jpg");
+    position: relative;
+}
+
+
+#boxB{
+    background-image: url("pic/p2.jpg");
+    position: relative;
+}
+
+
+#boxC{
+    background-image: url("pic/p3.jpg");
+    position: relative;
+}
+
+/* 每一ABC大區塊的背景圖設定值 */
+.background_pic{
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    padding-top: 50vh;    
+    background-attachment: fixed;
+
+}
+
+
+.black_box{
+    width: 100%;
+    padding: calc(25vh - 25px)  0;  
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 下面中間的按鈕樣式 */
+.btn_style{
+    width: 250px;
+    height: 50px;
+    background-color: rgb(226, 218, 183);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+
+    position: relative;
+	border: 1px solid rgba(0,0,0,0.5);
+	transition: all 0.5s linear;
+
+}
+
+	.btn_style:hover {
+	border-radius: 25px;
+	transition: all 0.5s linear;    
+	}
+
+    .btn_style span{
+        font-size: 20px;
+        line-height: 50px;
+        padding: 0 80px;
+    }
+
+
+</style>
+
+
+</head>
+<body>
+<div id="all">
+    <div id="boxA" class="background_pic">               
+        <div id="boxAA" class="black_box">            
+            <div id="btn" class="btn_style"><span>click me!</span></div>
+        </div>
+    </div>
+    <div id="boxB" class="background_pic">
+        <div id="boxBB" class="black_box">            
+            <div id="btnB" class="btn_style"><span>click me!</span></div>
+        </div>
+    </div>
+    <div id="boxC" class="background_pic">
+        <div id="boxCC" class="black_box">
+            <div id="btnC" class="btn_style"><span>click me!</span></div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>
