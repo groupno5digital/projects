@@ -2,6 +2,7 @@
   height: 100vh;
   position: relative;
   background-attachment: fixed;
+  background-image: url("/assets/images/Aloha-Hawaii.jpg");
 }
 
 .header9 .mask {
