@@ -11,7 +11,7 @@
     }
 
     img {
-        position: absolute !important;
+        position: absolute;
     }
 
     h1 {
@@ -24,9 +24,8 @@
 }
 
 .header1 {
-    background-image: url("/assets/images/hawaii-travel-apps-beach.jpg") !important;;
+    background-image: url("/assets/images/hawaii-travel-apps-beach.jpg");
     height: 100vh;
-   
 
     .box2 {
         padding-top: 10%;
