@@ -2,7 +2,7 @@
   height: 100vh;
   position: relative;
   background-attachment: fixed;
-  background-image: url("/assets/images/Aloha-Hawaii.jpg");
+  background-image: url("https://magarticles.magzter.com/articles/16528/370863/5d76c18967409/Aloha-Hawaii.jpg");
 }
 
 .header9 .mask {
@@ -22,7 +22,7 @@
 }
 
 .header1 {
-  background-image: url("/assets/images/hawaii-travel-apps-beach.jpg");
+  background-image: url("https://thehawaiiadmirer.com/wp-content/uploads/2019/05/hawaii-travel-apps-beach.jpg");
   height: 100vh;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .surfing {
-  background-image: url("/assets/images/surfing.jpg");
+  background-image: url("https://i1.wp.com/www.surfer.com/wp-content/uploads/2018/07/jackson_wau_nias_local-2742-180719-Ryan_Chachi_Craig.jpg?resize=1200%2C600&ssl=1");
   background-size: cover;
   background-position: left;
   background-attachment: fixed;
