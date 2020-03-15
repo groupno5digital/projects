@@ -1,0 +1,41 @@
+.header9 {
+  height: 100vh;
+  position: relative;
+  background-attachment: fixed;
+  background-image: url("/assets/images/Aloha-Hawaii.jpg");
+}
+
+.header9 .mask {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  opacity: 0.5;
+}
+
+.header9 img {
+  position: absolute;
+}
+
+.header9 h1 {
+  position: absolute;
+  bottom: 30%;
+}
+
+.header1 {
+  background-image: url("/assets/images/hawaii-travel-apps-beach.jpg");
+  height: 100vh;
+}
+
+.header1 .box2 {
+  padding-top: 10%;
+  width: 60%;
+  padding-left: 3%;
+}
+
+.surfing {
+  background-image: url("/assets/images/surfing.jpg");
+  background-size: cover;
+  background-position: left;
+  background-attachment: fixed;
+}
+/*# sourceMappingURL=style.css.map */
