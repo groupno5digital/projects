@@ -61,7 +61,7 @@ height:100%;
 display:block;
 }
 
-.stars {
+/* .stars {
 background:#000 url(https://www.land-of-web.com/wp-content/uploads/2016/08/stars.png) repeat top center;
 z-index:0;
 }
@@ -74,7 +74,7 @@ z-index:1;
 -o-animation:move-twink-back 200s linear infinite;
 -webkit-animation:move-twink-back 200s linear infinite;
 animation:move-twink-back 200s linear infinite;
-}
+} */
 
 /*================================================================
 Animation - Move Up and Move Down Letters
