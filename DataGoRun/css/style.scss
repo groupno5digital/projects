@@ -1,27 +1,26 @@
-@charset "UTF-8";
 /*================================================================
 Default Styles
 ================================================================*/
 body {
+  // font: 18px Arial, sans-serif;
   font-family: "Noto Sans TC", sans-serif, "微軟正黑體";
   color: #fff;
   margin: 0;
 }
 
 /*** Navbar ***/
+
 .nav-box {
   position: fixed;
   z-index: 999999;
   top: 0;
   left: 50%;
   margin-right: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 10;
   width: 100%;
   height: 50px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, white), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(to bottom, white 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
 }
 
 .nav,
@@ -33,44 +32,39 @@ body {
   font-weight: 400;
   letter-spacing: 2px;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+  a {
+    text-decoration: none;
+  }
+
+  .nav-item {
+    padding: 5px 0;
+
+    &:after {
+      content: "\00a0";
+      display: block;
+      height: 1px;
+      width: 100%;
+      position: relative;
+      top: 3px;
+      background: transparent;
+      transition: top 0.3s ease-out;
+      -webkit-transition: top 0.3s ease-out;
+    }
+
+    &:hover:after {
+      top: 7px;
+      background: #3c3c3c;
+    }
+  }
 }
 
-.nav a,
-.navbar a {
-  text-decoration: none;
-}
-
-.nav .nav-item,
-.navbar .nav-item {
-  padding: 5px 0;
-}
-
-.nav .nav-item:after,
-.navbar .nav-item:after {
-  content: "\00a0";
-  display: block;
-  height: 1px;
-  width: 100%;
-  position: relative;
-  top: 3px;
-  background: transparent;
-  transition: top 0.3s ease-out;
-  -webkit-transition: top 0.3s ease-out;
-}
-
-.nav .nav-item:hover:after,
-.navbar .nav-item:hover:after {
-  top: 7px;
-  background: #3c3c3c;
-}
+// banner
 
 .wrapper {
   width: 100%;
@@ -80,34 +74,35 @@ body {
   overflow: hidden;
   position: relative;
   z-index: 2;
-  background: #e0b702;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2vw), 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2vw), 0 100%);
-}
+  background: rgb(224, 183, 2);
 
-.wrapper .banner-top {
-  position: absolute;
-  width: 30%;
-}
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2vw), 0 100%);
 
-.wrapper .banner-right {
-  position: absolute;
-  width: 30%;
-  right: 0.5%;
-  top: 0;
-}
+  .banner-top {
+    position: absolute;
+    width: 30%;
+  }
 
-.wrapper .running-button {
-  position: absolute;
-  left: 42%;
-  bottom: 8%;
+  .banner-right {
+    position: absolute;
+    width: 30%;
+    right: 0.5%;
+    top: 0;
+  }
+
+  
+
+  .running-button {
+    position: absolute;
+    left: 42%;
+    bottom: 8%;
+  }
 }
 
 .scene {
   padding: 0;
   margin: 0;
 }
-
 /*================================================================
   Starry Sky
   Trick created by Andrey https://www.script-tutorials.com/night-sky-with-twinkling-stars/
@@ -122,6 +117,24 @@ body {
 }
 
 @-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-ms-keyframes move-twink-back {
   from {
     background-position: 0 0;
   }
@@ -156,6 +169,7 @@ body {
   -webkit-animation:move-twink-back 200s linear infinite;
   animation:move-twink-back 200s linear infinite;
   } */
+
 /*================================================================
   Animation - Move Up and Move Down Letters
   ================================================================*/
@@ -164,101 +178,143 @@ body {
   ================================================================*/
 @keyframes moveUp {
   0% {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-            transform: translate3d(0px, 0px, 0px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
   }
+
   50% {
-    -webkit-transform: translate3d(0px, 10px, 0px);
-            transform: translate3d(0px, 10px, 0px);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    transform: translate3d(0px, 10px, 0px);
+    animation-timing-function: ease-out;
   }
+
   100% {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-            transform: translate3d(0px, 0px, 0px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
   }
 }
-
 @-webkit-keyframes moveUp {
   0% {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-            transform: translate3d(0px, 0px, 0px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
   }
+
   50% {
-    -webkit-transform: translate3d(0px, 10px, 0px);
-            transform: translate3d(0px, 10px, 0px);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    transform: translate3d(0px, 10px, 0px);
+    animation-timing-function: ease-out;
   }
+
   100% {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-            transform: translate3d(0px, 0px, 0px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+}
+@-moz-keyframes moveUp {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+
+  50% {
+    transform: translate3d(0px, 10px, 0px);
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+}
+@-ms-keyframes moveUp {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+
+  50% {
+    transform: translate3d(0px, 10px, 0px);
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
   }
 }
 
 .moveUp {
-  -webkit-animation: moveUp 2s infinite;
-          animation: moveUp 2s infinite;
+  animation: moveUp 2s infinite;
 }
-
 /*================================================================
   Move Down
   ================================================================*/
 @keyframes moveDown {
   0% {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-            transform: translate3d(0px, 0px, 0px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
   }
+
   50% {
-    -webkit-transform: translate3d(0px, -10px, 0px);
-            transform: translate3d(0px, -10px, 0px);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    transform: translate3d(0px, -10px, 0px);
+    animation-timing-function: ease-out;
   }
+
   100% {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-            transform: translate3d(0px, 0px, 0px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
   }
 }
-
 @-webkit-keyframes moveDown {
   0% {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-            transform: translate3d(0px, 0px, 0px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
   }
+
   50% {
-    -webkit-transform: translate3d(0px, -10px, 0px);
-            transform: translate3d(0px, -10px, 0px);
-    -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    transform: translate3d(0px, -10px, 0px);
+    animation-timing-function: ease-out;
   }
+
   100% {
-    -webkit-transform: translate3d(0px, 0px, 0px);
-            transform: translate3d(0px, 0px, 0px);
-    -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+}
+@-moz-keyframes moveDown {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+
+  50% {
+    transform: translate3d(0px, -10px, 0px);
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+}
+@-ms-keyframes moveDown {
+  0% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
+  }
+
+  50% {
+    transform: translate3d(0px, -10px, 0px);
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+    animation-timing-function: ease-in;
   }
 }
 
 .moveDown {
-  -webkit-animation: moveDown 2s infinite;
-          animation: moveDown 2s infinite;
+  animation: moveDown 2s infinite;
 }
-
 /*================================================================
   PARALLAX
   ================================================================*/
@@ -281,52 +337,54 @@ li.layer a {
   text-shadow: 3px 3px 3px #ccc;
   display: block;
 }
-
 /* li.layer:nth-child(1) {} 1 item */
+
 /*-----Logotype----------------*/
-li.layer:nth-child(1) .logo-back {
-  width: 38%;
-  position: absolute;
-  top: 15vh;
-  left: 31vw;
-}
+li.layer:nth-child(1) {
 
-li.layer:nth-child(1) .logo-box {
-  width: 40%;
-  position: absolute;
-  top: 28vh;
-  left: 30vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
 
-li.layer:nth-child(1) .logo-box .logo {
-  width: 50%;
-}
 
-li.layer:nth-child(1) .logo-box span {
-  color: black;
-  margin-top: 5%;
-  font-size: 1rem;
+  .logo-back {
+    width: 38%;
+    position: absolute;
+    top: 15vh;
+    left: 31vw;
+  }
+  .logo-box {   
+    width: 40%;
+    position: absolute;
+    top: 28vh;
+    left: 30vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  .logo {
+    width: 50%;
+    // position: absolute;
+    // top: 30vh;
+    // left: 40vw;
+  }
+
+  span {
+    // margin: 0 auto;
+    // position: absolute;
+    // top: 50vh;
+    // left: 40vw;
+    color: black;
+    margin-top: 5%;
+    font-size: 1rem;
+  }
+}
 }
 
 li.layer:nth-child(2) a {
   font-size: 3.5vw;
   color: black;
-  text-shadow: 2px 2px 2px #7c7c7c;
+  text-shadow: 2px 2px 2px rgb(124, 124, 124);
   padding: 7px;
   /* border: 2px solid black; */
   border-radius: 5px;
@@ -335,7 +393,14 @@ li.layer:nth-child(2) a {
   top: 30vh;
   left: 40vw;
   -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
   transition: all 1s ease;
+
+  // img {
+  //     width: 40%;
+  // }
 }
 
 li.layer:nth-child(2) a:hover {
@@ -405,7 +470,6 @@ li.layer:nth-child(10) a {
   top: 35vh;
   right: 23vw;
 }
-
 /*-----8---------------------*/
 li.layer:nth-child(11) a {
   font-size: 6.5vw;
@@ -413,7 +477,6 @@ li.layer:nth-child(11) a {
   top: 60vh;
   right: 30vw;
 }
-
 /*-----9---------------------*/
 li.layer:nth-child(12) a {
   font-size: 4vw;
@@ -422,7 +485,9 @@ li.layer:nth-child(12) a {
   right: 20vw;
 }
 
+
+
+// section 為何跑跑
 .title {
-  margin-top: 150px;
+    margin-top: 150px;
 }
-/*# sourceMappingURL=style.css.map */
