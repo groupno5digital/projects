@@ -13,6 +13,10 @@ body a {
   text-decoration: none;
 }
 
+body li {
+  list-style: none;
+}
+
 /*** Navbar ***/
 .nav .scroll-link:after {
   content: "\00a0";
@@ -204,8 +208,8 @@ body a {
   position: relative;
   z-index: 2;
   background: #e0b702;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2vw), 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2vw), 0 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 3vw), 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 3vw), 0 100%);
 }
 
 .banner .wrapper .banner-top {
@@ -496,8 +500,6 @@ li.layer:nth-child(12) a {
   margin-right: auto;
   overflow: hidden;
   z-index: 2;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2vw));
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2vw));
 }
 
 .section-why .container .title-left {
@@ -562,5 +564,95 @@ li.layer:nth-child(12) a {
 .img-box .parallax .container .row .text-box span strong {
   font-weight: 1000;
   font-size: 40px;
+}
+
+/*================================================================
+跑跑項目
+================================================================*/
+.run-items {
+  background: #f8f8f8;
+  width: 100%;
+}
+
+.run-items .run-items-box {
+  width: 100%;
+  padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  background: cornsilk;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 3vw));
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 3vw));
+}
+
+.run-items .run-items-box .item-box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  min-height: 58px;
+}
+
+.run-items .run-items-box .item-box .item-context {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  margin-right: 10px;
+  background-color: #f8f8f8;
+  border: 1px solid #eee;
+  border-radius: 5%;
+  -webkit-transition: opacity, border 0.2s linear;
+  transition: opacity, border 0.2s linear;
+  -webkit-box-shadow: grey;
+          box-shadow: grey;
+  padding: 20px;
+}
+
+.run-items .run-items-box .item-box .item-context:hover {
+  background: #66d6c5;
+}
+
+.run-items .run-items-box .item-box .item-context h3 {
+  font-weight: 1000;
+  color: black;
+}
+
+.run-items .run-items-box .item-box .item-context .item-cell {
+  width: 80%;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+}
+
+.run-items .run-items-box .item-box .cell-1 {
+  height: 80%;
+}
+
+.run-items .run-items-box .item-box .cell-2 {
+  height: 90%;
+}
+
+.run-items .run-items-box .item-box .cell-3 {
+  height: 95%;
+}
+
+.run-items .run-items-box .item-box .item-text ul {
+  display: inline-block;
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -12,6 +12,10 @@ body {
   a {
     text-decoration: none;
   }
+
+  li {
+    list-style: none;
+  }
 }
 
 /*** Navbar ***/
@@ -271,7 +275,7 @@ body {
     z-index: 2;
     background: rgb(224, 183, 2);
 
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2vw), 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 3vw), 0 100%);
 
     .banner-top {
       position: absolute;
@@ -536,9 +540,6 @@ li.layer:nth-child(12) a {
   overflow: hidden;
   z-index: 2;
 
-  // 由左上往右下斜
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2vw));
-
   .container {
     .title-left {
       display: flex;
@@ -550,7 +551,7 @@ li.layer:nth-child(12) a {
       }
     }
 
-    .row-btn{
+    .row-btn {
       margin-top: 60px;
     }
   }
@@ -594,6 +595,94 @@ li.layer:nth-child(12) a {
               font-size: 40px;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+/*================================================================
+跑跑項目
+================================================================*/
+
+.run-items {
+  background: #f8f8f8;
+  width: 100%;
+  
+
+  .run-items-box {
+    width: 100%;  
+ 
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    background: cornsilk;
+    // 由左上往右下斜
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 3vw));
+
+    .item-box {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      min-height: 58px;
+
+      .item-context {
+        // margin: 10px auto 0;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        overflow: hidden;
+        margin-right: 10px;
+
+        background-color: #f8f8f8;
+        border: 1px solid #eee;
+        border-radius: 5%;
+        transition: opacity, border 0.2s linear;
+
+        box-shadow: grey;
+
+        padding: 20px;
+
+        &:hover {
+          background: #66d6c5;
+        }
+
+        h3 {
+          font-weight: 1000;
+          color: black;
+        }
+
+        
+
+        .item-cell {
+          width: 80%;
+          font-size: 16px;
+          line-height: 20px;
+          text-align: center;
+          background-color: #f8f8f8;
+          -webkit-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+        }
+      }
+
+      .cell-1 {
+        height: 80%;
+      }
+      .cell-2 {
+        height: 90%;
+      }
+      .cell-3 {
+        height: 95%;
+      }
+
+      .item-text{
+
+        ul {
+          display: inline-block;
+          padding: 0;
         }
       }
     }
