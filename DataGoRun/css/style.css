@@ -4,8 +4,13 @@ Default Styles
 ================================================================*/
 body {
   font-family: "Noto Sans TC", sans-serif, "微軟正黑體";
-  color: #fff;
+  color: black;
+  background-color: cornsilk;
   margin: 0;
+}
+
+body a {
+  text-decoration: none;
 }
 
 /*** Navbar ***/
@@ -20,8 +25,6 @@ body {
   z-index: 10;
   width: 100%;
   height: 50px;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, white), to(rgba(255, 255, 255, 0)));
-  background: linear-gradient(to bottom, white 50%, rgba(255, 255, 255, 0) 100%);
 }
 
 .nav,
@@ -46,11 +49,7 @@ body {
 .nav a,
 .navbar a {
   text-decoration: none;
-}
-
-.nav .nav-item,
-.navbar .nav-item {
-  padding: 5px 0;
+  color: #3c3c3c;
 }
 
 .nav .nav-item:after,
@@ -70,37 +69,46 @@ body {
 .navbar .nav-item:hover:after {
   top: 7px;
   background: #3c3c3c;
+  text-decoration: none;
 }
 
-.wrapper {
-  width: 100%;
-  height: 90vh;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-  position: relative;
-  z-index: 2;
-  background: #e0b702;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2vw), 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2vw), 0 100%);
+@media screen and (max-width: 836px) {
+  .nav,
+  .navbar {
+    width: 90% !important;
+  }
+  .nav .nav-item,
+  .navbar .nav-item {
+    font-size: 10px !important;
+  }
 }
 
-.wrapper .banner-top {
-  position: absolute;
-  width: 30%;
+@media screen and (max-width: 550px) {
+  .nav,
+  .navbar {
+    width: 90% !important;
+  }
+  .nav .nav-item,
+  .navbar .nav-item {
+    font-size: 10px !important;
+  }
 }
 
-.wrapper .banner-right {
-  position: absolute;
-  width: 30%;
-  right: 0.5%;
-  top: 0;
-}
-
-.wrapper .running-button {
-  position: absolute;
-  left: 42%;
-  bottom: 8%;
+@media screen and (max-width: 350px) {
+  .nav-box {
+    height: 70px !important;
+  }
+  .nav,
+  .navbar {
+    -ms-flex-wrap: wrap !important;
+        flex-wrap: wrap !important;
+    height: 50px !important;
+    margin-top: 5px;
+  }
+  .nav .nav-item,
+  .navbar .nav-item {
+    margin: 5px 5px !important;
+  }
 }
 
 .scene {
@@ -262,6 +270,64 @@ body {
 /*================================================================
   PARALLAX
   ================================================================*/
+.wrapper {
+  width: 100%;
+  height: 90vh;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  background: #e0b702;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2vw), 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2vw), 0 100%);
+}
+
+.wrapper .banner-top {
+  position: absolute;
+  width: 30%;
+}
+
+.wrapper .banner-right {
+  position: absolute;
+  width: 30%;
+  right: 0.5%;
+  top: 0;
+}
+
+.wrapper .running-button {
+  position: absolute;
+  left: 42%;
+  bottom: 8%;
+}
+
+@media (max-width: 960px) {
+  .wrapper .running-button {
+    width: 20%;
+    position: absolute;
+    left: 40%;
+  }
+  .wrapper .running-button span {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper .running-button {
+    width: 30%;
+    position: absolute;
+    left: 35%;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapper .running-button {
+    width: 40%;
+    position: absolute;
+    left: 30%;
+  }
+}
+
 ul#scene {
   list-style-type: none;
 }
@@ -284,18 +350,11 @@ li.layer a {
 
 /* li.layer:nth-child(1) {} 1 item */
 /*-----Logotype----------------*/
-li.layer:nth-child(1) .logo-back {
-  width: 38%;
-  position: absolute;
-  top: 15vh;
-  left: 31vw;
-}
-
 li.layer:nth-child(1) .logo-box {
-  width: 40%;
+  width: 36%;
   position: absolute;
   top: 28vh;
-  left: 30vw;
+  left: 32vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,14 +372,90 @@ li.layer:nth-child(1) .logo-box {
       flex-wrap: wrap;
 }
 
+@media (max-width: 880px) {
+  li.layer:nth-child(1) .logo-box {
+    width: 40%;
+    position: absolute;
+    left: 30vw;
+  }
+}
+
+@media (max-width: 767px) {
+  li.layer:nth-child(1) .logo-box {
+    width: 48%;
+    position: absolute;
+    left: 26vw;
+  }
+}
+
+@media (max-width: 576px) {
+  li.layer:nth-child(1) .logo-box {
+    width: 70%;
+    position: absolute;
+    left: 15vw;
+  }
+}
+
+@media (max-width: 321px) {
+  li.layer:nth-child(1) .logo-box {
+    width: 80%;
+    position: absolute;
+    left: 10vw;
+  }
+}
+
+li.layer:nth-child(1) .logo-box .logo-back {
+  width: 100%;
+  position: absolute;
+}
+
 li.layer:nth-child(1) .logo-box .logo {
   width: 50%;
+  z-index: 99;
+}
+
+@media (max-width: 960px) {
+  li.layer:nth-child(1) .logo-box .logo {
+    width: 40%;
+  }
+}
+
+@media (max-width: 576px) {
+  li.layer:nth-child(1) .logo-box .logo {
+    width: 40%;
+  }
 }
 
 li.layer:nth-child(1) .logo-box span {
   color: black;
   margin-top: 5%;
   font-size: 1rem;
+  z-index: 98;
+}
+
+@media (max-width: 1140px) {
+  li.layer:nth-child(1) .logo-box span {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 960px) {
+  li.layer:nth-child(1) .logo-box span {
+    width: 40%;
+  }
+}
+
+@media (max-width: 880px) {
+  li.layer:nth-child(1) .logo-box span {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  li.layer:nth-child(1) .logo-box span {
+    width: 55%;
+    font-size: 0.7rem;
+  }
 }
 
 li.layer:nth-child(2) a {
@@ -346,69 +481,76 @@ li.layer:nth-child(2) a:hover {
 li.layer:nth-child(3) a {
   font-size: 5vw;
   position: absolute;
-  top: 15vh;
-  left: 15vw;
+  top: 20vh;
+  left: 4vw;
 }
 
 /*-----1---------------------*/
 li.layer:nth-child(4) a {
-  font-size: 4vw;
+  font-size: 5vw;
   position: absolute;
-  top: 40vh;
-  left: 22vw;
+  top: 30vh;
+  left: 10vw;
 }
 
 /*-----2---------------------*/
 li.layer:nth-child(5) a {
   font-size: 6vw;
   position: absolute;
-  top: 65vh;
-  left: 20vw;
+  top: 60vh;
+  left: 30vw;
 }
 
 /*-----3---------------------*/
 li.layer:nth-child(6) a {
   font-size: 3.5vw;
   position: absolute;
-  top: 70vh;
-  left: 35vw;
+  top: 75vh;
+  left: 12vw;
 }
 
 /*-----4---------------------*/
 li.layer:nth-child(7) a {
   font-size: 3.5vw;
   position: absolute;
-  top: 13vh;
-  left: 25vw;
+  top: 50vh;
+  left: 8vw;
 }
 
 /*-----5---------------------*/
 li.layer:nth-child(8) a {
   font-size: 3.5vw;
   position: absolute;
-  top: 15vh;
-  left: 68vw;
+  top: 18vh;
+  left: 75vw;
+}
+
+@media (max-width: 576px) {
+  li.layer:nth-child(8) a {
+    position: absolute;
+    left: 85vw;
+  }
 }
 
 /*-----6---------------------*/
 li.layer:nth-child(9) a {
-  font-size: 5vw;
+  font-size: 4vw;
   position: absolute;
-  top: 15vh;
-  right: 20vw;
+  top: 27vh;
+  right: 10vw;
 }
 
 /*-----7---------------------*/
 li.layer:nth-child(10) a {
   font-size: 6vw;
   position: absolute;
-  top: 35vh;
-  right: 23vw;
+  top: 40vh;
+  right: 13vw;
 }
 
 /*-----8---------------------*/
 li.layer:nth-child(11) a {
-  font-size: 6.5vw;
+  font-size: 5.5vw;
   position: absolute;
   top: 60vh;
   right: 30vw;
@@ -418,11 +560,26 @@ li.layer:nth-child(11) a {
 li.layer:nth-child(12) a {
   font-size: 4vw;
   position: absolute;
-  top: 50vh;
-  right: 20vw;
+  top: 55vh;
+  right: 16vw;
 }
 
-.title {
-  margin-top: 150px;
+.container .title {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .title span {
+  line-height: 40px;
+}
+
+.container .row {
+  margin-top: 30px;
+}
+
+.container .row .icon-1 img {
+  width: 15%;
 }
 /*# sourceMappingURL=style.css.map */

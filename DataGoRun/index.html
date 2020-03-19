@@ -7,15 +7,27 @@
   <title>數據跑跑</title>
 
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css" type="text/css">
-  <link rel="stylesheet" href="./css/runner_button.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
     integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+ 
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+<link rel="stylesheet" href="assets/css/form-elements.css">
+    <link rel="stylesheet" href="assets/css/style_2.css">
+    <link rel="stylesheet" href="assets/css/media-queries.css">
+
+ 
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.1.0/css/all.css">
+  <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <link rel="stylesheet" href="./css/runner_button.css">
+
 </head>
 
 <body>
 
   <!--------------- Navbar --------------------->
+
   <nav class="nav-box">
     <ul class="nav navbar">
       <li class="nav-item active"><a href="#top">TOP</a></li>
@@ -39,8 +51,9 @@
     <!------------ Parallax Scene-------------------->
     <ul id="scene" class="scene">
       <li class="layer" data-depth="0.20">
-        <img class="logo-back" src="./img/banner_logo_back.png" alt="">
         <div class="logo-box">
+          <img class="logo-back" src="./img/banner_logo_back.png" alt="">
+
           <img class="logo" src="./img/logo4.png" alt="">
           <span>數據不僅是數字，它更是生活，更是血液；<br>貫穿人一生中每個生命階段。</span>
 
@@ -83,7 +96,7 @@
 
     <button class="running-button">
       <span class="default">Let's run</span>
-      <span class="active">Tracking</span>
+      <span class="active">Go</span>
       <div class="running">
         <div class="outer">
           <div class="body">
@@ -109,27 +122,57 @@
   </section>
 
   <!--------------- 為何選跑跑 --------------------->
-  <section class="why-run container">    
-    <div class="row">
-      <div class="title">
-        <h2>為何選跑跑？</h2>
-        <span>你一定會喜歡跑跑</span>
+  <section class="why-run container">
+    <div class="row title">
+      <h2>為何選跑跑 //</h2>
+      <span>你一定會喜歡的跑跑</span>
+    </div>
+    <div class="row ">
+
+      <div class="icon-1 col-12 col-md-4 d-flex justify-content-center">
+        <img src="./img/icon1.png" alt="">
       </div>
-      <div class="col-12 col-md-4">
-        
+      <div class="icon-1 col-12 col-md-4 d-flex justify-content-center">
+        <img src="./img/icon1.png" alt="">
+
       </div>
-      <div class="col-12 col-md-4">
+      <div class="icon-1 col-12 col-md-4 d-flex justify-content-center">
+        <img src="./img/icon1.png" alt="">
 
       </div>
     </div>
-    
 
+    </div>
+  </section>
 
+  <!--------------- 跑跑項目 --------------------->
+  <section class="why-run container">
+    <div class="title">
+      <h2>為何選跑跑 //</h2>
+      <span>你一定會喜歡的跑跑</span>
+    </div>
+    <div class="row ">
+
+      <div class="icon-1 col-12 col-md-4 d-flex justify-content-center">
+        <img src="./img/icon1.png" alt="">
+      </div>
+      <div class="icon-1 col-12 col-md-4 d-flex justify-content-center">
+        <img src="./img/icon1.png" alt="">
+
+      </div>
+      <div class="icon-1 col-12 col-md-4 d-flex justify-content-center">
+        <img src="./img/icon1.png" alt="">
+
+      </div>
+    </div>
+
+    </div>
   </section>
 
 
 
   <!-- JS -->
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -142,47 +185,13 @@
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
-  <script>
-    //project url https://github.com/wagerfield/parallax/
-    // Code below is by Matthe Wagerfield
-    //============================================================
-    //
-    // The MIT License
-    //
-    // Copyright (C) 2013 Matthew Wagerfield - @mwagerfield
-    //
-    // Permission is hereby granted, free of charge, to any
-    // person obtaining a copy of this software and associated
-    // documentation files (the "Software"), to deal in the
-    // Software without restriction, including without limitation
-    // the rights to use, copy, modify, merge, publish, distribute,
-    // sublicense, and/or sell copies of the Software, and to
-    // permit persons to whom the Software is furnished to do
-    // so, subject to the following conditions:
-    //
-    // The above copyright notice and this permission notice
-    // shall be included in all copies or substantial portions
-    // of the Software.
-    //
-    // THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY
-    // OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT
-    // LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-    // FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO
-    // EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
-    // FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
-    // AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
-    // OR OTHER DEALINGS IN THE SOFTWARE.
-    //
-    //============================================================
 
-    /**
-     * Parallax.js
-     * @author Matthew Wagerfield - @mwagerfield
-     * @description Creates a parallax effect between an array of layers,
-     *              driving the motion from the gyroscope output of a smartdevice.
-     *              If no gyroscope is available, the cursor position is used.
-     */
+
+ 
+
+
+  <script>
+
     ; (function (window, document, undefined) {
 
       var NAME = 'Parallax';
@@ -650,6 +659,15 @@
     });
 
   </script>
+
+   <!-- Javascript -->
+   <script src="assets/js/jquery-1.11.1.min.js"></script>
+   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+   <script src="assets/js/jquery.backstretch.min.js"></script>
+   <script src="assets/js/wow.min.js"></script>
+   <script src="assets/js/retina-1.1.0.min.js"></script>
+   <script src="assets/js/waypoints.min.js"></script>
+   <script src="assets/js/scripts.js"></script>
 
 
 

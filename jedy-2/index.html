@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>數據跑跑-2</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<link rel="stylesheet" href="assets/css/form-elements.css">
+	<link rel="stylesheet" href="assets/css/style_2.css">
+	<link rel="stylesheet" href="assets/css/media-queries.css">
+
+
+	<!-- Favicon and touch icons -->
+	<link rel="shortcut icon" href="assets/ico/favicon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+	<link rel="stylesheet" href="./css/style.css" type="text/css">
+	<link rel="stylesheet" href="./css/runner_button.css">
+
+
+</head>
+
+<body>
+
+	<!-- Loader -->
+	<div class="loader">
+		<div class="loader-img"></div>
+	</div>
+
+	<!-- Top menu -->
+	<nav class="navbar navbar-inverse navbar-fixed-top navbar-no-bg" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#top-navbar-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="top-navbar-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a class="scroll-link" href="#top-content">Top</a></li>
+					<li><a class="scroll-link" href="#features">Features</a></li>
+					<li><a class="scroll-link" href="#how-it-works">How it works</a></li>
+					<li><a class="scroll-link" href="#testimonials">Testimonials</a></li>
+					<li><a class="scroll-link" href="#about-us">About</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Top content -->
+	<section class="banner">
+		<div class="wrapper">
+			<img class="banner-top" src="./img/banner_bottom.png" alt="">
+
+			<!------------ Parallax Scene-------------------->
+			<ul id="scene" class="scene">
+				<li class="layer" data-depth="0.20">
+					<div class="logo-box">
+						<img class="logo-back" src="./img/banner_logo_back.png" alt="">
+
+						<img class="logo" src="./img/logo4.png" alt="">
+						<span>數據不僅是數字，它更是生活，更是血液；<br>貫穿人一生中每個生命階段。</span>
+
+					</div>
+
+				</li>
+				<li class="layer" data-depth="0.30">
+					<a href="#0">
+						<!-- <img src="./img/logo4.png" alt="">        -->
+					</a>
+				</li>
+				<li class="layer" data-depth="0.60"><a href="#1" class="moveUp">0</a></li>
+				<li class="layer" data-depth="0.90"><a href="#2" class="moveDown">1</a></li>
+				<li class="layer" data-depth="0.70"><a href="#3" class="moveUp">2</a></li>
+				<li class="layer" data-depth="0.20"><a href="#4" class="moveDown">3</a></li>
+				<li class="layer" data-depth="0.30"><a href="#5" class="moveUp">4</a></li>
+				<li class="layer" data-depth="0.20"><a href="#6" class="moveDown">5</a></li>
+				<li class="layer" data-depth="0.60"><a href="#7" class="moveUp">6</a></li>
+				<li class="layer" data-depth="0.90"><a href="#8" class="moveDown">7</a></li>
+				<li class="layer" data-depth="0.70"><a href="#9" class="moveUp">8</a></li>
+				<li class="layer" data-depth="0.50"><a href="#10" class="moveUp">9</a></li>
+
+			</ul>
+			<!------------ End - Parallax Scene------------->
+			<img class="banner-right" src="./img/banner_right.png" alt="">
+
+			<!-- 跑跑按鈕 -->
+			<button class="running-button">
+				<span class="default">Let's run</span>
+				<span class="active">Go</span>
+				<div class="running">
+					<div class="outer">
+						<div class="body">
+							<div class="arm behind"></div>
+							<div class="arm front"></div>
+							<div class="leg behind"></div>
+							<div class="leg front"></div>
+						</div>
+					</div>
+				</div>
+			</button>
+		</div>
+	</section>
+
+
+	<!------------- 為何選跑跑 -------------->
+	<div class="features-container section-container section-why">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 features section-description title-left wow fadeIn">
+					<h2>為何選<strong>跑跑</strong></h2>
+					<span>你一定會喜歡的跑跑</span>
+					<div class="divider-1 wow fadeInUp"><span></span></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 features-box wow fadeInUp">
+					<div class="features-box-icon">
+						<i class="fa fa-magic"></i>
+					</div>
+					<h3>Easy To Use</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+						labore et.</p>
+				</div>
+				<div class="col-sm-4 features-box wow fadeInDown">
+					<div class="features-box-icon">
+						<i class="fa fa-thumbs-o-up"></i>
+					</div>
+					<h3>Responsive Design</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+						labore et.</p>
+				</div>
+				<div class="col-sm-4 features-box wow fadeInUp">
+					<div class="features-box-icon">
+						<i class="fa fa-cog"></i>
+					</div>
+					<h3>Uses Bootstrap</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+						labore et.</p>
+				</div>
+			</div>
+			<div class="row row-btn">
+				<button class="running-button">
+					<span class="default">Contact Us</span>
+					<span class="active">Go</span>
+					<div class="running">
+						<div class="outer">
+							<div class="body">
+								<div class="arm behind"></div>
+								<div class="arm front"></div>
+								<div class="leg behind"></div>
+								<div class="leg front"></div>
+							</div>
+						</div>
+					</div>
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<!------------- 形象說明區塊 / 關於跑跑 -------------->
+	<section class="img-box">
+		<div class="parallax  mt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="text-box col-10 col-md-10 mt-3 mx-auto">
+                        <span class="text-center">
+							<strong>數據跑跑</strong>＿成立於2020年，由國內知名大學統計與醫學領域的專家組成，具備統計分析、論文數據分析、生物統計、醫學統計、資料處理等專業技術與相關經驗，已累積數件以上的輔導案件數，成功協助多所國立大學與醫學中心之數據處理與指導。服務品質值得您的信賴，專業資歷讓您放心。
+						</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</section>
+
+
+	<!------------- 跑跑項目 -------------->
+	<div class="more-features-container section-container section-container-gray-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 more-features section-description wow fadeIn">
+					<h2><strong>跑跑</strong>項目</h2>
+					<div class="divider-1 wow fadeInUp"><span></span></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-5 more-features-box wow fadeInLeft">
+					<img src="assets/img/devices/iphone.png" alt="">
+				</div>
+				<div class="col-sm-7 more-features-box wow fadeInUp">
+
+					<div class="more-features-box-text">
+						<div class="more-features-box-text-icon">
+							<i class="fa fa-paperclip"></i>
+						</div>
+						<h3>Ut wisi enim ad minim</h3>
+						<div class="more-features-box-text-description">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+							ut labore et.
+							Ut wisi enim ad minim veniam, quis nostrud.
+						</div>
+					</div>
+					<div class="more-features-box-text">
+						<div class="more-features-box-text-icon">
+							<i class="fa fa-user"></i>
+						</div>
+						<h3>Quis nostrud exerci tat</h3>
+						<div class="more-features-box-text-description">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+							ut labore et.
+							Ut wisi enim ad minim veniam, quis nostrud.
+						</div>
+					</div>
+					<div class="more-features-box-text">
+						<div class="more-features-box-text-icon">
+							<i class="fa fa-pencil"></i>
+						</div>
+						<h3>Sed do eiusmod tempor</h3>
+						<div class="more-features-box-text-description">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+							ut labore et.
+							Ut wisi enim ad minim veniam, quis nostrud.
+						</div>
+					</div>
+					<div class="more-features-box-text">
+						<div class="more-features-box-text-icon">
+							<i class="fa fa-twitter"></i>
+						</div>
+						<h3>Minim veniam quis nostrud</h3>
+						<div class="more-features-box-text-description">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+							ut labore et.
+							Ut wisi enim ad minim veniam, quis nostrud.
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Great support -->
+	<div class="great-support-container section-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 great-support section-description wow fadeIn">
+					<h2><strong>Great</strong> support</h2>
+					<div class="divider-1 wow fadeInUp"><span></span></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-7 great-support-box wow fadeInLeft">
+					<div class="great-support-box-text great-support-box-text-left">
+						<h3>Ut wisi enim ad minim</h3>
+						<p class="medium-paragraph">
+							Lorem ipsum dolor sit amet, <span class="colored-text">consectetur adipisicing</span> elit,
+							sed do eiusmod tempor incididunt ut labore et. Ut wisi enim ad minim veniam, quis nostrud.
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+							ut labore et.
+							Ut wisi enim ad minim veniam, quis nostrud.
+							Exerci tation ullamcorper suscipit <span class="colored-text">lobortis nisl</span> ut
+							aliquip ex ea commodo consequat.
+							Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-5 great-support-box wow fadeInUp">
+					<img src="assets/img/devices/pc.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- How it works -->
+	<div class="how-it-works-container section-container section-container-image-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 how-it-works section-description wow fadeIn">
+					<h2><strong>How</strong> it works</h2>
+					<div class="divider-1 wow fadeInUp"><span></span></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-1 how-it-works-box wow fadeInUp">
+					<div class="how-it-works-box-icon">1</div>
+					<h3>Sign up</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+						labore et.</p>
+				</div>
+				<div class="col-sm-4 col-sm-offset-2 how-it-works-box wow fadeInDown">
+					<div class="how-it-works-box-icon">2</div>
+					<h3>Make payment</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+						labore et.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-1 how-it-works-box wow fadeInUp">
+					<div class="how-it-works-box-icon">3</div>
+					<h3>Log in</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+						labore et.</p>
+				</div>
+				<div class="col-sm-4 col-sm-offset-2 how-it-works-box wow fadeInDown">
+					<div class="how-it-works-box-icon">4</div>
+					<h3>Start learning</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+						labore et.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 section-bottom-button wow fadeInUp">
+					<a class="btn btn-link-1 scroll-link" href="#top-content">Sign up now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Testimonials -->
+	<div class="testimonials-container section-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 testimonials section-description wow fadeIn">
+					<h2><strong>Our</strong> clients</h2>
+					<div class="divider-1 wow fadeInUp"><span></span></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-10 col-sm-offset-1 testimonial-list wow fadeInUp">
+					<div role="tabpanel">
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane fade in active" id="tab1">
+								<div class="testimonial-image">
+									<img src="assets/img/testimonials/1.jpg" alt=""
+										data-at2x="assets/img/testimonials/1.jpg">
+								</div>
+								<div class="testimonial-text">
+									<p>
+										"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+										incididunt ut labore et.
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+										incididunt ut labore et.
+										Lorem ipsum dolor sit amet, consectetur..."<br>
+										<a href="#">Lorem Ipsum, dolor.co.uk</a>
+									</p>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane fade" id="tab2">
+								<div class="testimonial-image">
+									<img src="assets/img/testimonials/2.jpg" alt=""
+										data-at2x="assets/img/testimonials/2.jpg">
+								</div>
+								<div class="testimonial-text">
+									<p>
+										"Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+										lobortis nisl ut aliquip
+										ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud exerci
+										tation ullamcorper suscipit
+										lobortis nisl ut aliquip ex ea commodo consequat..."<br>
+										<a href="#">Minim Veniam, nostrud.com</a>
+									</p>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane fade" id="tab3">
+								<div class="testimonial-image">
+									<img src="assets/img/testimonials/3.jpg" alt=""
+										data-at2x="assets/img/testimonials/3.jpg">
+								</div>
+								<div class="testimonial-text">
+									<p>
+										"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+										incididunt ut labore et.
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+										incididunt ut labore et.
+										Lorem ipsum dolor sit amet, consectetur..."<br>
+										<a href="#">Lorem Ipsum, dolor.co.uk</a>
+									</p>
+								</div>
+							</div>
+							<div role="tabpanel" class="tab-pane fade" id="tab4">
+								<div class="testimonial-image">
+									<img src="assets/img/testimonials/4.jpg" alt=""
+										data-at2x="assets/img/testimonials/4.jpg">
+								</div>
+								<div class="testimonial-text">
+									<p>
+										"Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+										lobortis nisl ut aliquip
+										ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud exerci
+										tation ullamcorper suscipit
+										lobortis nisl ut aliquip ex ea commodo consequat..."<br>
+										<a href="#">Minim Veniam, nostrud.com</a>
+									</p>
+								</div>
+							</div>
+						</div>
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active">
+								<a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab"></a>
+							</li>
+							<li role="presentation">
+								<a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab"></a>
+							</li>
+							<li role="presentation">
+								<a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab"></a>
+							</li>
+							<li role="presentation">
+								<a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Call to action -->
+	<div class="call-to-action-container section-container section-container-image-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 call-to-action section-description wow fadeInLeftBig">
+					<h2><strong>Call</strong> to action</h2>
+					<div class="divider-1 wow fadeInUp"><span></span></div>
+					<p>
+						Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+						aliquip ex ea commodo consequat. Ut wisi enim ad minim veniam, quis nostrud.
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 section-bottom-button wow fadeInUp">
+					<a class="btn btn-link-1 scroll-link" href="#top-content">Sign up now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- About us -->
+	<div class="about-us-container section-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 about-us section-description wow fadeIn">
+					<h2><strong>About</strong> us</h2>
+					<div class="divider-1 wow fadeInUp"><span></span></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 about-us-box wow fadeInUp">
+					<div class="about-us-photo">
+						<img src="assets/img/about/1.jpg" alt="" data-at2x="assets/img/about/1.jpg">
+					</div>
+					<h3>Jim Black</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+					<div class="about-us-social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-dribbble"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+					</div>
+				</div>
+				<div class="col-sm-4 about-us-box wow fadeInDown">
+					<div class="about-us-photo">
+						<img src="assets/img/about/2.jpg" alt="" data-at2x="assets/img/about/2.jpg">
+					</div>
+					<h3>Tom Brown</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+					<div class="about-us-social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-dribbble"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+					</div>
+				</div>
+				<div class="col-sm-4 about-us-box wow fadeInUp">
+					<div class="about-us-photo">
+						<img src="assets/img/about/3.jpg" alt="" data-at2x="assets/img/about/3.jpg">
+					</div>
+					<h3>Sarah Green</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+					<div class="about-us-social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-dribbble"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 footer-social">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-dribbble"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-pinterest"></i></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 footer-copyright">
+					&copy; Jedy Bootstrap Template by <a href="http://azmind.com">Azmind</a>.
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Javascript -->
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.backstretch.min.js"></script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
+
+
+
+
+
+	<script>
+
+		; (function (window, document, undefined) {
+
+			var NAME = 'Parallax';
+			var MAGIC_NUMBER = 30;
+			var DEFAULTS = {
+				calibrationThreshold: 100,
+				calibrationDelay: 500,
+				supportDelay: 500,
+				calibrateX: false,
+				calibrateY: true,
+				invertX: true,
+				invertY: true,
+				limitX: false,
+				limitY: false,
+				scalarX: 10.0,
+				scalarY: 10.0,
+				frictionX: 0.1,
+				frictionY: 0.1
+			};
+
+			function Parallax(element, options) {
+
+				// DOM Context
+				this.element = element;
+				this.layers = element.getElementsByClassName('layer');
+
+				// Data Extraction
+				var data = {
+					calibrateX: this.data(this.element, 'calibrate-x'),
+					calibrateY: this.data(this.element, 'calibrate-y'),
+					invertX: this.data(this.element, 'invert-x'),
+					invertY: this.data(this.element, 'invert-y'),
+					limitX: this.data(this.element, 'limit-x'),
+					limitY: this.data(this.element, 'limit-y'),
+					scalarX: this.data(this.element, 'scalar-x'),
+					scalarY: this.data(this.element, 'scalar-y'),
+					frictionX: this.data(this.element, 'friction-x'),
+					frictionY: this.data(this.element, 'friction-y')
+				};
+
+				// Delete Null Data Values
+				for (var key in data) {
+					if (data[key] === null) delete data[key];
+				}
+
+				// Compose Settings Object
+				this.extend(this, DEFAULTS, options, data);
+
+				// States
+				this.calibrationTimer = null;
+				this.calibrationFlag = true;
+				this.enabled = false;
+				this.depths = [];
+				this.raf = null;
+
+				// Offset
+				this.ox = 0;
+				this.oy = 0;
+				this.ow = 0;
+				this.oh = 0;
+
+				// Calibration
+				this.cx = 0;
+				this.cy = 0;
+
+				// Input
+				this.ix = 0;
+				this.iy = 0;
+
+				// Motion
+				this.mx = 0;
+				this.my = 0;
+
+				// Velocity
+				this.vx = 0;
+				this.vy = 0;
+
+				// Callbacks
+				this.onMouseMove = this.onMouseMove.bind(this);
+				this.onDeviceOrientation = this.onDeviceOrientation.bind(this);
+				this.onOrientationTimer = this.onOrientationTimer.bind(this);
+				this.onCalibrationTimer = this.onCalibrationTimer.bind(this);
+				this.onAnimationFrame = this.onAnimationFrame.bind(this);
+				this.onWindowResize = this.onWindowResize.bind(this);
+
+				// Initialise
+				this.initialise();
+			}
+
+			Parallax.prototype.extend = function () {
+				if (arguments.length > 1) {
+					var master = arguments[0];
+					for (var i = 1, l = arguments.length; i < l; i++) {
+						var object = arguments[i];
+						for (var key in object) {
+							master[key] = object[key];
+						}
+					}
+				}
+			};
+
+			Parallax.prototype.data = function (element, name) {
+				return this.deserialize(element.getAttribute('data-' + name));
+			};
+
+			Parallax.prototype.deserialize = function (value) {
+				if (value === "true") {
+					return true;
+				} else if (value === "false") {
+					return false;
+				} else if (value === "null") {
+					return null;
+				} else if (!isNaN(parseFloat(value)) && isFinite(value)) {
+					return parseFloat(value);
+				} else {
+					return value;
+				}
+			};
+
+			Parallax.prototype.offset = function (element) {
+				var x = 0, y = 0;
+				while (element && !isNaN(element.offsetLeft) && !isNaN(element.offsetTop)) {
+					x += element.offsetLeft - element.scrollLeft;
+					y += element.offsetTop - element.scrollTop;
+					element = element.offsetParent;
+				}
+				return { top: y, left: x };
+			};
+
+			Parallax.prototype.camelCase = function (value) {
+				return value.replace(/-+(.)?/g, function (match, character) {
+					return character ? character.toUpperCase() : '';
+				});
+			};
+
+			Parallax.prototype.transformSupport = function (value) {
+				var element = document.createElement('div');
+				var propertySupport = false;
+				var propertyValue = null;
+				var featureSupport = false;
+				var cssProperty = null;
+				var jsProperty = null;
+				for (var i = 0, l = this.vendors.length; i < l; i++) {
+					if (this.vendors[i] !== null) {
+						cssProperty = this.vendors[i][0] + 'transform';
+						jsProperty = this.vendors[i][1] + 'Transform';
+					} else {
+						cssProperty = 'transform';
+						jsProperty = 'transform';
+					}
+					if (element.style[jsProperty] !== undefined) {
+						propertySupport = true;
+						break;
+					}
+				}
+				switch (value) {
+					case '2D':
+						featureSupport = propertySupport;
+						break;
+					case '3D':
+						if (propertySupport) {
+							document.body.appendChild(element);
+							element.style[jsProperty] = 'translate3d(1px,1px,1px)';
+							propertyValue = window.getComputedStyle(element).getPropertyValue(cssProperty);
+							featureSupport = propertyValue !== undefined && propertyValue.length > 0 && propertyValue !== "none";
+							document.body.removeChild(element);
+						}
+						break;
+				}
+				return featureSupport;
+			};
+
+			Parallax.prototype.ww = null;
+			Parallax.prototype.wh = null;
+			Parallax.prototype.hw = null;
+			Parallax.prototype.hh = null;
+			Parallax.prototype.portrait = null;
+			Parallax.prototype.desktop = !navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|BB10|IEMobile)/);
+			Parallax.prototype.vendors = [null, ['-webkit-', 'webkit'], ['-moz-', 'Moz'], ['-o-', 'O'], ['-ms-', 'ms']];
+			Parallax.prototype.motionSupport = window.DeviceMotionEvent !== undefined;
+			Parallax.prototype.orientationSupport = window.DeviceOrientationEvent !== undefined;
+			Parallax.prototype.orientationStatus = 0;
+			Parallax.prototype.transform2DSupport = Parallax.prototype.transformSupport('2D');
+			Parallax.prototype.transform3DSupport = Parallax.prototype.transformSupport('3D');
+
+			Parallax.prototype.initialise = function () {
+
+				// Configure Context Styles
+				if (this.transform3DSupport) this.accelerate(this.element);
+				var style = window.getComputedStyle(this.element);
+				if (style.getPropertyValue('position') === 'static') {
+					this.element.style.position = 'relative';
+				}
+
+				// Configure Layer Styles
+				for (var i = 0, l = this.layers.length; i < l; i++) {
+					var layer = this.layers[i];
+					if (this.transform3DSupport) this.accelerate(layer);
+					layer.style.position = i ? 'absolute' : 'relative';
+					layer.style.display = 'block';
+					layer.style.height = '100%';
+					layer.style.width = '100%';
+					layer.style.left = 0;
+					layer.style.top = 0;
+
+					// Cache Layer Depth
+					this.depths.push(this.data(layer, 'depth') || 0);
+				}
+
+				// Setup
+				this.updateDimensions();
+				this.enable();
+				this.queueCalibration(this.calibrationDelay);
+			};
+
+			Parallax.prototype.updateDimensions = function () {
+
+				// Cache Context Dimensions
+				this.ox = this.offset(this.element).left;
+				this.oy = this.offset(this.element).top;
+				this.ow = this.element.offsetWidth;
+				this.oh = this.element.offsetHeight;
+
+				// Cache Window Dimensions
+				this.ww = window.innerWidth;
+				this.wh = window.innerHeight;
+				this.hw = this.ww / 2;
+				this.hh = this.wh / 2;
+			};
+
+			Parallax.prototype.queueCalibration = function (delay) {
+				clearTimeout(this.calibrationTimer);
+				this.calibrationTimer = setTimeout(this.onCalibrationTimer, delay);
+			};
+
+			Parallax.prototype.enable = function () {
+				if (!this.enabled) {
+					this.enabled = true;
+					if (this.orientationSupport) {
+						this.portrait = null;
+						window.addEventListener('deviceorientation', this.onDeviceOrientation);
+						setTimeout(this.onOrientationTimer, this.supportDelay);
+					} else {
+						this.cx = 0;
+						this.cy = 0;
+						this.portrait = false;
+						window.addEventListener('mousemove', this.onMouseMove);
+					}
+					window.addEventListener('resize', this.onWindowResize);
+					this.raf = requestAnimationFrame(this.onAnimationFrame);
+				}
+			};
+
+			Parallax.prototype.disable = function () {
+				if (this.enabled) {
+					this.enabled = false;
+					if (this.orientationSupport) {
+						window.removeEventListener('deviceorientation', this.onDeviceOrientation);
+					} else {
+						window.removeEventListener('mousemove', this.onMouseMove);
+					}
+					window.removeEventListener('resize', this.onWindowResize);
+					cancelAnimationFrame(this.raf);
+				}
+			};
+
+			Parallax.prototype.calibrate = function (x, y) {
+				this.calibrateX = x === undefined ? this.calibrateX : x;
+				this.calibrateY = y === undefined ? this.calibrateY : y;
+			};
+
+			Parallax.prototype.invert = function (x, y) {
+				this.invertX = x === undefined ? this.invertX : x;
+				this.invertY = y === undefined ? this.invertY : y;
+			};
+
+			Parallax.prototype.friction = function (x, y) {
+				this.frictionX = x === undefined ? this.frictionX : x;
+				this.frictionY = y === undefined ? this.frictionY : y;
+			};
+
+			Parallax.prototype.scalar = function (x, y) {
+				this.scalarX = x === undefined ? this.scalarX : x;
+				this.scalarY = y === undefined ? this.scalarY : y;
+			};
+
+			Parallax.prototype.limit = function (x, y) {
+				this.limitX = x === undefined ? this.limitX : x;
+				this.limitY = y === undefined ? this.limitY : y;
+			};
+
+			Parallax.prototype.clamp = function (value, min, max) {
+				value = Math.max(value, min);
+				value = Math.min(value, max);
+				return value;
+			};
+
+			Parallax.prototype.css = function (element, property, value) {
+				var jsProperty = null;
+				for (var i = 0, l = this.vendors.length; i < l; i++) {
+					if (this.vendors[i] !== null) {
+						jsProperty = this.camelCase(this.vendors[i][1] + '-' + property);
+					} else {
+						jsProperty = property;
+					}
+					if (element.style[jsProperty] !== undefined) {
+						element.style[jsProperty] = value;
+						break;
+					}
+				}
+			};
+
+			Parallax.prototype.accelerate = function (element) {
+				this.css(element, 'transform', 'translate3d(0,0,0)');
+				this.css(element, 'transform-style', 'preserve-3d');
+				this.css(element, 'backface-visibility', 'hidden');
+			};
+
+			Parallax.prototype.setPosition = function (element, x, y) {
+				x += '%';
+				y += '%';
+				if (this.transform3DSupport) {
+					this.css(element, 'transform', 'translate3d(' + x + ',' + y + ',0)');
+				} else if (this.transform2DSupport) {
+					this.css(element, 'transform', 'translate(' + x + ',' + y + ')');
+				} else {
+					element.style.left = x;
+					element.style.top = y;
+				}
+			};
+
+			Parallax.prototype.onOrientationTimer = function (event) {
+				if (this.orientationSupport && this.orientationStatus === 0) {
+					this.disable();
+					this.orientationSupport = false;
+					this.enable();
+				}
+			};
+
+			Parallax.prototype.onCalibrationTimer = function (event) {
+				this.calibrationFlag = true;
+			};
+
+			Parallax.prototype.onWindowResize = function (event) {
+				this.updateDimensions();
+			};
+
+			Parallax.prototype.onAnimationFrame = function () {
+				var dx = this.ix - this.cx;
+				var dy = this.iy - this.cy;
+				if ((Math.abs(dx) > this.calibrationThreshold) || (Math.abs(dy) > this.calibrationThreshold)) {
+					this.queueCalibration(0);
+				}
+				if (this.portrait) {
+					this.mx = (this.calibrateX ? dy : this.iy) * this.scalarX;
+					this.my = (this.calibrateY ? dx : this.ix) * this.scalarY;
+				} else {
+					this.mx = (this.calibrateX ? dx : this.ix) * this.scalarX;
+					this.my = (this.calibrateY ? dy : this.iy) * this.scalarY;
+				}
+				if (!isNaN(parseFloat(this.limitX))) {
+					this.mx = this.clamp(this.mx, -this.limitX, this.limitX);
+				}
+				if (!isNaN(parseFloat(this.limitY))) {
+					this.my = this.clamp(this.my, -this.limitY, this.limitY);
+				}
+				this.vx += (this.mx - this.vx) * this.frictionX;
+				this.vy += (this.my - this.vy) * this.frictionY;
+				for (var i = 0, l = this.layers.length; i < l; i++) {
+					var layer = this.layers[i];
+					var depth = this.depths[i];
+					var xOffset = this.vx * depth * (this.invertX ? -1 : 1);
+					var yOffset = this.vy * depth * (this.invertY ? -1 : 1);
+					this.setPosition(layer, xOffset, yOffset);
+				}
+				this.raf = requestAnimationFrame(this.onAnimationFrame);
+			};
+
+			Parallax.prototype.onDeviceOrientation = function (event) {
+
+				// Validate environment and event properties.
+				if (!this.desktop && event.beta !== null && event.gamma !== null) {
+
+					// Set orientation status.
+					this.orientationStatus = 1;
+
+					// Extract Rotation
+					var x = (event.beta || 0) / MAGIC_NUMBER; //  -90 :: 90
+					var y = (event.gamma || 0) / MAGIC_NUMBER; // -180 :: 180
+
+					// Detect Orientation Change
+					var portrait = this.wh > this.ww;
+					if (this.portrait !== portrait) {
+						this.portrait = portrait;
+						this.calibrationFlag = true;
+					}
+
+					// Set Calibration
+					if (this.calibrationFlag) {
+						this.calibrationFlag = false;
+						this.cx = x;
+						this.cy = y;
+					}
+
+					// Set Input
+					this.ix = x;
+					this.iy = y;
+				}
+			};
+
+			Parallax.prototype.onMouseMove = function (event) {
+
+				// Calculate Input
+				this.ix = (event.pageX - this.hw) / this.hw;
+				this.iy = (event.pageY - this.hh) / this.hh;
+			};
+
+			// Expose Parallax
+			window[NAME] = Parallax;
+
+		})(window, document);
+
+		/**
+		 * Request Animation Frame Polyfill.
+		 * @author Tino Zijdel
+		 * @author Paul Irish
+		 * @see https://gist.github.com/paulirish/1579671
+		 */
+		; (function () {
+
+			var lastTime = 0;
+			var vendors = ['ms', 'moz', 'webkit', 'o'];
+
+			for (var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+				window.requestAnimationFrame = window[vendors[x] + 'RequestAnimationFrame'];
+				window.cancelAnimationFrame = window[vendors[x] + 'CancelAnimationFrame'] || window[vendors[x] + 'CancelRequestAnimationFrame'];
+			}
+
+			if (!window.requestAnimationFrame) {
+				window.requestAnimationFrame = function (callback, element) {
+					var currTime = new Date().getTime();
+					var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+					var id = window.setTimeout(function () { callback(currTime + timeToCall); },
+						timeToCall);
+					lastTime = currTime + timeToCall;
+					return id;
+				};
+			}
+
+			if (!window.cancelAnimationFrame) {
+				window.cancelAnimationFrame = function (id) {
+					clearTimeout(id);
+				};
+			}
+
+		}());
+		var scene = document.getElementById('scene');
+		var parallax = new Parallax(scene);
+
+
+		document.querySelectorAll('.running-button').forEach(btn => {
+			btn.addEventListener('click', e => {
+				btn.classList.toggle('active');
+			});
+		});
+
+
+	</script>
+
+	<script src="assets/js/wow.min.js"></script>
+	<script src="assets/js/retina-1.1.0.min.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+
+
+
+</body>
+
+</html>

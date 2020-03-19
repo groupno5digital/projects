@@ -1,0 +1,566 @@
+@charset "UTF-8";
+/*================================================================
+Default Styles
+================================================================*/
+body {
+  font-family: "Noto Sans TC", sans-serif, "微軟正黑體";
+  color: black;
+  background-color: cornsilk;
+  margin: 0;
+}
+
+body a {
+  text-decoration: none;
+}
+
+/*** Navbar ***/
+.nav .scroll-link:after {
+  content: "\00a0";
+  display: block;
+  height: 1px;
+  width: 100%;
+  position: relative;
+  top: 3px;
+  background: transparent;
+  transition: top 0.3s ease-out;
+  -webkit-transition: top 0.3s ease-out;
+}
+
+.nav .scroll-link:hover:after {
+  top: 7px;
+  background: #3c3c3c;
+  text-decoration: none;
+}
+
+.scene {
+  padding: 0;
+  margin: 0;
+}
+
+/*================================================================
+  Starry Sky
+  Trick created by Andrey https://www.script-tutorials.com/night-sky-with-twinkling-stars/
+  ================================================================*/
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+.stars,
+.twinkling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* .stars {
+  background:#000 url(https://www.land-of-web.com/wp-content/uploads/2016/08/stars.png) repeat top center;
+  z-index:0;
+  }
+  
+  .twinkling {
+  background:transparent url(https://www.land-of-web.com/wp-content/uploads/2016/08/twinkling.png) repeat top center;
+  z-index:1;
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+  } */
+/*================================================================
+  Animation - Move Up and Move Down Letters
+  ================================================================*/
+/*================================================================
+  Move Up
+  ================================================================*/
+@keyframes moveUp {
+  0% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  50% {
+    -webkit-transform: translate3d(0px, 10px, 0px);
+            transform: translate3d(0px, 10px, 0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+}
+
+@-webkit-keyframes moveUp {
+  0% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  50% {
+    -webkit-transform: translate3d(0px, 10px, 0px);
+            transform: translate3d(0px, 10px, 0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+}
+
+.moveUp {
+  -webkit-animation: moveUp 2s infinite;
+          animation: moveUp 2s infinite;
+}
+
+/*================================================================
+  Move Down
+  ================================================================*/
+@keyframes moveDown {
+  0% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  50% {
+    -webkit-transform: translate3d(0px, -10px, 0px);
+            transform: translate3d(0px, -10px, 0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+}
+
+@-webkit-keyframes moveDown {
+  0% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  50% {
+    -webkit-transform: translate3d(0px, -10px, 0px);
+            transform: translate3d(0px, -10px, 0px);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+            transform: translate3d(0px, 0px, 0px);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+}
+
+.moveDown {
+  -webkit-animation: moveDown 2s infinite;
+          animation: moveDown 2s infinite;
+}
+
+/*================================================================
+  PARALLAX
+  ================================================================*/
+.banner {
+  background-color: cornsilk;
+}
+
+.banner .wrapper {
+  width: 100%;
+  height: 90vh;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  background: #e0b702;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2vw), 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2vw), 0 100%);
+}
+
+.banner .wrapper .banner-top {
+  position: absolute;
+  width: 30%;
+  left: 0;
+}
+
+.banner .wrapper .banner-right {
+  position: absolute;
+  width: 30%;
+  right: 0.5%;
+  top: 0;
+}
+
+.banner .wrapper .running-button {
+  position: absolute;
+  left: 42%;
+  bottom: 8%;
+}
+
+@media (max-width: 960px) {
+  .banner .wrapper .running-button {
+    width: 20%;
+    position: absolute;
+    left: 40%;
+  }
+  .banner .wrapper .running-button span {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner .wrapper .running-button {
+    width: 30%;
+    position: absolute;
+    left: 35%;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner .wrapper .running-button {
+    width: 40%;
+    position: absolute;
+    left: 30%;
+  }
+}
+
+ul#scene {
+  list-style-type: none;
+}
+
+.layer {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+}
+
+li.layer a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 3px 3px 3px #ccc;
+  display: block;
+}
+
+/* li.layer:nth-child(1) {} 1 item */
+/*-----Logotype----------------*/
+li.layer:nth-child(1) .logo-box {
+  width: 36%;
+  position: absolute;
+  top: 28vh;
+  left: 32vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 880px) {
+  li.layer:nth-child(1) .logo-box {
+    width: 40%;
+    position: absolute;
+    left: 30vw;
+  }
+}
+
+@media (max-width: 767px) {
+  li.layer:nth-child(1) .logo-box {
+    width: 48%;
+    position: absolute;
+    left: 26vw;
+  }
+}
+
+@media (max-width: 576px) {
+  li.layer:nth-child(1) .logo-box {
+    width: 70%;
+    position: absolute;
+    left: 15vw;
+  }
+}
+
+@media (max-width: 321px) {
+  li.layer:nth-child(1) .logo-box {
+    width: 80%;
+    position: absolute;
+    left: 10vw;
+  }
+}
+
+li.layer:nth-child(1) .logo-box .logo-back {
+  width: 100%;
+  position: absolute;
+}
+
+li.layer:nth-child(1) .logo-box .logo {
+  width: 50%;
+  z-index: 99;
+}
+
+@media (max-width: 960px) {
+  li.layer:nth-child(1) .logo-box .logo {
+    width: 40%;
+  }
+}
+
+@media (max-width: 576px) {
+  li.layer:nth-child(1) .logo-box .logo {
+    width: 40%;
+  }
+}
+
+li.layer:nth-child(1) .logo-box span {
+  color: black;
+  margin-top: 5%;
+  font-size: 1.5rem;
+  z-index: 98;
+}
+
+@media (max-width: 1140px) {
+  li.layer:nth-child(1) .logo-box span {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 960px) {
+  li.layer:nth-child(1) .logo-box span {
+    width: 40%;
+  }
+}
+
+@media (max-width: 880px) {
+  li.layer:nth-child(1) .logo-box span {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  li.layer:nth-child(1) .logo-box span {
+    width: 55%;
+    font-size: 0.7rem;
+  }
+}
+
+li.layer:nth-child(2) a {
+  font-size: 3.5vw;
+  color: black;
+  text-shadow: 2px 2px 2px #7c7c7c;
+  padding: 7px;
+  /* border: 2px solid black; */
+  border-radius: 5px;
+  /* box-shadow: 2px 2px 2px rgb(124, 124, 124); */
+  position: absolute;
+  top: 30vh;
+  left: 40vw;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+li.layer:nth-child(2) a:hover {
+  font-size: 4.5vw;
+}
+
+/*-----0----------------------*/
+li.layer:nth-child(3) a {
+  font-size: 5vw;
+  position: absolute;
+  top: 20vh;
+  left: 4vw;
+}
+
+/*-----1---------------------*/
+li.layer:nth-child(4) a {
+  font-size: 5vw;
+  position: absolute;
+  top: 30vh;
+  left: 10vw;
+}
+
+/*-----2---------------------*/
+li.layer:nth-child(5) a {
+  font-size: 6vw;
+  position: absolute;
+  top: 60vh;
+  left: 30vw;
+}
+
+/*-----3---------------------*/
+li.layer:nth-child(6) a {
+  font-size: 3.5vw;
+  position: absolute;
+  top: 75vh;
+  left: 12vw;
+}
+
+/*-----4---------------------*/
+li.layer:nth-child(7) a {
+  font-size: 3.5vw;
+  position: absolute;
+  top: 50vh;
+  left: 8vw;
+}
+
+/*-----5---------------------*/
+li.layer:nth-child(8) a {
+  font-size: 3.5vw;
+  position: absolute;
+  top: 18vh;
+  left: 75vw;
+}
+
+@media (max-width: 576px) {
+  li.layer:nth-child(8) a {
+    position: absolute;
+    left: 85vw;
+  }
+}
+
+/*-----6---------------------*/
+li.layer:nth-child(9) a {
+  font-size: 4vw;
+  position: absolute;
+  top: 27vh;
+  right: 10vw;
+}
+
+/*-----7---------------------*/
+li.layer:nth-child(10) a {
+  font-size: 6vw;
+  position: absolute;
+  top: 40vh;
+  right: 13vw;
+}
+
+/*-----8---------------------*/
+li.layer:nth-child(11) a {
+  font-size: 5.5vw;
+  position: absolute;
+  top: 66vh;
+  right: 30vw;
+}
+
+/*-----9---------------------*/
+li.layer:nth-child(12) a {
+  font-size: 4vw;
+  position: absolute;
+  top: 55vh;
+  right: 16vw;
+}
+
+.section-why {
+  background: cornsilk;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  z-index: 2;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2vw));
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 2vw));
+}
+
+.section-why .container .title-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.section-why .container .title-left strong {
+  font-weight: 1000;
+}
+
+.section-why .container .row-btn {
+  margin-top: 60px;
+}
+
+.img-box .parallax {
+  background-image: url("../img/img-about.jpg");
+  width: "100%";
+  height: 100vh;
+  /* parallax effect */
+  background-attachment: fixed;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img-box .parallax .container {
+  width: 65%;
+  height: 30%;
+}
+
+.img-box .parallax .container .row {
+  width: 100%;
+  height: 100%;
+}
+
+.img-box .parallax .container .row .text-box {
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+  background-color: #e0b702;
+  opacity: 0.9;
+  color: black;
+}
+
+.img-box .parallax .container .row .text-box span {
+  direction: ltr;
+}
+
+.img-box .parallax .container .row .text-box span strong {
+  font-weight: 1000;
+  font-size: 40px;
+}
+/*# sourceMappingURL=style.css.map */
