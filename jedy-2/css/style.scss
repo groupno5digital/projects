@@ -2,6 +2,7 @@ $gray: #eee;
 $white: #fff;
 $black: #333;
 $active: #e74c3c;
+$green: #66d6c5;
 
 /*================================================================
 Default Styles
@@ -763,7 +764,7 @@ li.layer:nth-child(12) a {
 ================================================================*/
 
 .run-items {
-  background: #f8f8f8;
+  background:$green;
   width: 100%;
   height: 100vh;
 
@@ -856,23 +857,29 @@ li.layer:nth-child(12) a {
   }
 }
 
+// =====================================
 // 跑跑內容
-
+//======================================
 .run-content {
   height: 100vh;
   width: 100%;
-  background-color: #f8f8f8;
-  color: black;
+  // background-color: #f8f8f8;
+  background-color: $green;
+  color: white;
 
   text-align: center;
+  
+ 
 
   .tab-box {
     margin: 0 auto;
-    width: 900px;
+    width: 80%;
     height: 400px;
     display: flex;
     align-items: center;
     justify-content: left;
+    background-color: white;
+
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 
     #left-side {
