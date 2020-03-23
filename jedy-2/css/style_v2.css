@@ -140,7 +140,6 @@ Navbar
 }
 
 #top-social-menu li {
-  float: left;
   padding: 10px 15px;
 }
 
@@ -1208,14 +1207,60 @@ li.layer:nth-child(12) a {
   transition: all 0.6s ease-in-out;
 }
 
-.timeline {
+.run-process .row-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* Creates vertical line in middle */
+  /* This seems to align the glyph icons down the middle to an extent. */
+  /* I'm genuinely unsure on what this does! */
+  /* Unsure on this also */
+  /* Also unsure! So confusing */
+  /* Also unsure on this malarki */
+  /* This produces the actual box around each item */
+  /* Below section adds depth to triangle pointer */
+  /* Below section adds white triangle point to edge of timeline panels. */
+  /* This particular section of CSS is of note - Appears to centre the glyph icon in the middle of timeline with background */
+  /* Below code 'inverts' or floats the panel to the right. */
+  /* Below code enables the arrow pointing to the timeline itself. */
+  /* This is the highlight on the arrow */
+  /* Rest of the CSS is rather self explanatory - Just stylings and et cetera whereas above is more layout oriented. */
+  /* Removes gap above timeline title */
+}
+
+.run-process .row-btn .btn-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.run-process .row-btn .btn-box .running-button {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.run-process .row-btn .timeline {
   list-style: none;
   padding: 20px 0 20px;
   position: relative;
+  width: 80%;
 }
 
-/* Creates vertical line in middle */
-.timeline:before {
+.run-process .row-btn .timeline:before {
   top: 0;
   bottom: 0;
   position: absolute;
@@ -1226,38 +1271,32 @@ li.layer:nth-child(12) a {
   margin-left: -1.5px;
 }
 
-/* This seems to align the glyph icons down the middle to an extent. */
-.timeline > li {
+.run-process .row-btn .timeline > li {
   margin-bottom: 20px;
   position: relative;
 }
 
-/* I'm genuinely unsure on what this does! */
-.timeline > li:before,
-.timeline > li:after {
+.run-process .row-btn .timeline > li:before,
+.run-process .row-btn .timeline > li:after {
   content: " ";
   display: table;
 }
 
-/* Unsure on this also */
-.timeline > li:after {
+.run-process .row-btn .timeline > li:after {
   clear: both;
 }
 
-/* Also unsure! So confusing */
-.timeline > li:before,
-.timeline > li:after {
+.run-process .row-btn .timeline > li:before,
+.run-process .row-btn .timeline > li:after {
   content: " ";
   display: table;
 }
 
-/* Also unsure on this malarki */
-.timeline > li:after {
+.run-process .row-btn .timeline > li:after {
   clear: both;
 }
 
-/* This produces the actual box around each item */
-.timeline > li > .timeline-panel {
+.run-process .row-btn .timeline > li > .timeline-panel {
   width: 46%;
   background-color: #f8f8f8;
   float: left;
@@ -1269,8 +1308,7 @@ li.layer:nth-child(12) a {
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 }
 
-/* Below section adds depth to triangle pointer */
-.timeline > li > .timeline-panel:before {
+.run-process .row-btn .timeline > li > .timeline-panel:before {
   position: absolute;
   top: 26px;
   right: -15px;
@@ -1282,8 +1320,7 @@ li.layer:nth-child(12) a {
   content: " ";
 }
 
-/* Below section adds white triangle point to edge of timeline panels. */
-.timeline > li > .timeline-panel:after {
+.run-process .row-btn .timeline > li > .timeline-panel:after {
   position: absolute;
   top: 27px;
   right: -14px;
@@ -1295,8 +1332,7 @@ li.layer:nth-child(12) a {
   content: " ";
 }
 
-/* This particular section of CSS is of note - Appears to centre the glyph icon in the middle of timeline with background */
-.timeline > li > .timeline-badge {
+.run-process .row-btn .timeline > li > .timeline-badge {
   color: #fff;
   width: 50px;
   height: 50px;
@@ -1315,62 +1351,55 @@ li.layer:nth-child(12) a {
   border-bottom-left-radius: 50%;
 }
 
-/* Below code 'inverts' or floats the panel to the right. */
-.timeline > li.timeline-inverted > .timeline-panel {
+.run-process .row-btn .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
 }
 
-/* Below code enables the arrow pointing to the timeline itself. */
-.timeline > li.timeline-inverted > .timeline-panel:before {
+.run-process .row-btn .timeline > li.timeline-inverted > .timeline-panel:before {
   border-left-width: 0;
   border-right-width: 15px;
   left: -15px;
   right: auto;
 }
 
-/* This is the highlight on the arrow */
-.timeline > li.timeline-inverted > .timeline-panel:after {
+.run-process .row-btn .timeline > li.timeline-inverted > .timeline-panel:after {
   border-left-width: 0;
   border-right-width: 14px;
   left: -14px;
   right: auto;
 }
 
-/* Rest of the CSS is rather self explanatory - Just stylings and et cetera whereas above is more layout oriented. */
-.timeline-badge.primary {
+.run-process .row-btn .timeline-badge.primary {
   background-color: #2e6da4 !important;
 }
 
-.timeline-badge.success {
+.run-process .row-btn .timeline-badge.success {
   background-color: #3f903f !important;
 }
 
-.timeline-badge.warning {
+.run-process .row-btn .timeline-badge.warning {
   background-color: #f0ad4e !important;
 }
 
-.timeline-badge.danger {
+.run-process .row-btn .timeline-badge.danger {
   background-color: #d9534f !important;
 }
 
-.timeline-badge.info {
+.run-process .row-btn .timeline-badge.info {
   background-color: #5bc0de !important;
 }
 
-/* Removes gap above timeline title */
-.timeline-title {
+.run-process .row-btn .timeline-title {
   margin-top: 0;
   color: inherit;
 }
 
-.timeline-body > p,
-.timeline-body > ul {
+.run-process .row-btn .timeline-body > p,
+.run-process .row-btn .timeline-body > ul {
   margin-bottom: 0;
 }
 
-.timeline-body > p + p {
+.run-process .row-btn .timeline-body > p + p {
   margin-top: 5px;
 }
-
-/* Timeline CSS ends here */
 /*# sourceMappingURL=style_v2.css.map */

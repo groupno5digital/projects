@@ -26,7 +26,7 @@
 
 	<link rel="stylesheet" href="./css/style_v2.css" type="text/css">
 	<link rel="stylesheet" href="./css/runner_button.css">
-	<!-- <link rel="stylesheet" href="./css/tab_card.css"> -->
+	<link rel="stylesheet" href="./css/form.css">
 
 
 </head>
@@ -34,9 +34,9 @@
 <body>
 
 	<!-- Loader -->
-	<div class="loader">
+	<!-- <div class="loader">
 		<div class="loader-img"></div>
-	</div>
+	</div> -->
 
 	<!-- Top menu -->
 	<nav id="main-navbar" class="navbar navbar-default navbar-fixed-top">
@@ -390,9 +390,26 @@
 				</div>
 			</div>
 
-			<div class="row">
-				<!-- Timeline is a styled unordered list -->
-				<ul class="timeline">
+			<div class="row row-btn">
+				<div class="col-xs-12 col-md-6 btn-box order-2 order-md-1">
+					<button class="running-button">
+						<span class="default">Contact Us</span>
+						<span class="active">Go</span>
+						<div class="running">
+							<div class="outer">
+								<div class="body">
+									<div class="arm behind"></div>
+									<div class="arm front"></div>
+									<div class="leg behind"></div>
+									<div class="leg front"></div>
+								</div>
+							</div>
+						</div>
+					</button>
+				</div>
+
+				<div class="col-xs-12 col-md-6 order-1 order-md-2">
+					<ul class="timeline">
 					<!-- Each entry is a list item -->
 					<li>
 						<!-- Div for centre badge in middle of timeline -->
@@ -401,7 +418,7 @@
 						<div class="timeline-panel">
 							<!-- Styling for the heading of said timeline and title. -->
 							<div class="timeline-heading">
-								<h4 class="timeline-title">Mussum ipsum cacilds</h4>
+								<h4 class="timeline-title">來信/來電</h4>
 								<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Never really
 										happened</small></p>
 							</div>
@@ -417,7 +434,7 @@
 						<div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
 						<div class="timeline-panel">
 							<div class="timeline-heading">
-								<h4 class="timeline-title">This is yet another title</h4>
+								<h4 class="timeline-title">專人服務</h4>
 							</div>
 							<div class="timeline-body">
 								<p>Mussum ipsum I don't speak latin</p>
@@ -429,30 +446,137 @@
 						<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
 						<div class="timeline-panel">
 							<div class="timeline-heading">
-								<h4 class="timeline-title">This is another title!</h4>
+								<h4 class="timeline-title">方案報價</h4>
 							</div>
 							<div class="timeline-body">
 								<p>More text to fill this box</p>
 							</div>
 						</div>
 					</li>
-					<li class="timeline-inverted">
-						<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
-						<div class="timeline-panel">
-							<div class="timeline-heading">
-								<h4 class="timeline-title">This is a title!</h4>
-							</div>
-							<div class="timeline-body">
-								<p>This is a timeline item's body!</p>
-							</div>
-						</div>
-					</li>
+			
+				</ul>
+				</div>
+				
 			</div>
 
-		</div>
+			
+
 		</div>
 
+
+
+
+
+		<!-- Timeline is a styled unordered list -->
+
+
+
+		</div>
+
+
+
+
+
 	</section>
+
+	<!-- contact form -->
+	<div class="form-popup">
+		<div class="container form-wrapper">
+			<button class="btn close-form">Close</button>
+			<form id="my-form" novalidate="novalidate">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h1 class="form-title">開始跑跑</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-4 col-md-2">
+						<label for="name">姓名</label>
+						<input type="text" class="form-control" id="name" name="name" required="" placeholder="必填">
+					</div>
+					<div class="form-group col-4 col-md-2">
+						<label for="name">稱謂</label>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="gender" id="inlineRadio1"
+								value="option1">
+							<label class="form-check-label" for="inlineRadio1">小姐</label>
+						</div>
+						<div class="form-check form-check-inline">
+							<input class="form-check-input" type="radio" name="gender" id="inlineRadio2"
+								value="option2">
+							<label class="form-check-label" for="inlineRadio2">先生</label>
+						</div>
+					</div>
+
+					<div class="form-group col-md-4">
+						<label for="exampleFormControlSelect1">您是否有初步想法？</label>
+						<select class="form-control" name="status" id="exampleFormControlSelect1">
+							<option>我有明確的想法</option>
+							<option>我有些初步的點子</option>
+							<option>我希望先和專家討論</option>
+						</select>
+					</div>
+
+					<div class="form-group col-md-4">
+						<label for="exampleFormControlSelect1">預算範圍（新台幣）</label>
+						<select class="form-control" name="status" id="exampleFormControlSelect1">
+							<option>一千元以下</option>
+							<option>一千到三千元</option>
+							<option>三千到五千元</option>
+							<option>五千到一萬元</option>
+							<option>一萬到兩萬元</option>
+							<option>兩萬元以上</option>
+							<option>沒有預算想法，洽談後再議</option>
+						</select>
+					</div>
+
+				</div>
+				<div class="row">
+					<div class="form-group col-md-4">
+						<label for="phone">電話</label>
+						<input type="text" class="form-control" id="phone" name="phone" required="">
+					</div>
+					<div class="form-group col-md-4">
+						<label for="email">資料領域</label>
+						<input type="text" class="form-control" id="email" name="email" required="">
+					</div>
+					<div class="form-group col-md-4">
+						<label for="exampleFormControlSelect1 d-flex">可聯繫時間
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="date" id="inlineRadio1"
+									value="option1">
+								<label class="form-check-label" for="inlineRadio1">平日</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" name="date" id="inlineRadio2"
+									value="option2">
+								<label class="form-check-label" for="inlineRadio2">假日</label>
+							</div>
+						</label>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-4">
+							<label for="email">E-mail</label>
+							<input type="text" class="form-control" id="email" name="email" required="">
+						</div>
+						<div class="form-group col-md-4">
+							<label for="exampleFormControlTextarea1">研究目的（簡述）</label>
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						</div>
+					</div>
+
+					<div class="form-check">
+						<label>
+							<input type="checkbox" name="formcheck" checked="" class="checkfz" required=""> Submit<br>
+						</label>
+					</div>
+					<button type="submit" class="btn send-form">Send</button>
+			</form>
+		</div>
+	</div>
+	<div class="success-message">
+		<h1>You success reset this form</h1>
+	</div>
 
 
 
@@ -497,7 +621,7 @@
 
 	<!-- 跑跑內容 tab -->
 	<script src="./js/tab_card_v2.js"></script>
-
+	<script src="./js/form.js"></script>
 
 
 
