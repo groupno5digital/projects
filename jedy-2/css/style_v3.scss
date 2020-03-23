@@ -140,6 +140,8 @@ Navbar
 ================================ */
 
 #top-social-menu {
+  display: flex;
+  flex-direction: row;
   position: absolute;
   top: 7px;
   right: 0;
@@ -1173,10 +1175,11 @@ li.layer:nth-child(12) a {
       align-items: center;
 
       .running-button {
-        width: 50%;
+        width: 40%;
         margin: 0 auto;
       }
     }
+  }
 
     .timeline {
       list-style: none;
@@ -1190,153 +1193,73 @@ li.layer:nth-child(12) a {
         position: absolute;
         content: " ";
         width: 3px;
-        background-color: #eeeeee;
-        left: 50%;
+        background-color: black;
+        left: 0;
         margin-left: -1.5px;
       }
-    }
-    /* Creates vertical line in middle */
+      li {
+        
+          margin-bottom: 20px;
+          position: relative;
+        
+          &:before,
+          &:after {
+            content: " ";
+            display: table;
+          }
 
-    /* This seems to align the glyph icons down the middle to an extent. */
-    .timeline > li {
-      margin-bottom: 20px;
-      position: relative;
-    }
+          &:after {
+            clear: both;
+          }
 
-    /* I'm genuinely unsure on what this does! */
-    .timeline > li:before,
-    .timeline > li:after {
-      content: " ";
-      display: table;
-    }
+          .timeline-badge {
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 1.4em;
+            text-align: center;
+            position: absolute;
+            top: 16px;
+            left: 0;
+            margin-left: -25px;
+            background-color: #999999;
+            z-index: 100;
+            border-top-right-radius: 50%;
+            border-top-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+          }
 
-    /* Unsure on this also */
-    .timeline > li:after {
-      clear: both;
-    }
-    /* Also unsure! So confusing */
-    .timeline > li:before,
-    .timeline > li:after {
-      content: " ";
-      display: table;
-    }
+          .timeline-panel {
+            width: 46%;
+            // float: left;
+            border: 1px solid #d4d4d4;
+            border-radius: 2px;
+            padding: 20px;
+            position: relative;
+            -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+            margin-left: 45px;
 
-    /* Also unsure on this malarki */
-    .timeline > li:after {
-      clear: both;
-    }
+            &:before {
+              position: absolute;
+              top: 26px;
+              left: -15px;
+              display: inline-block;
+              border-top: 15px solid transparent;
+              border-left: 0 solid #ccc;
+              border-right: 15px solid #ccc;
+              border-bottom: 15px solid transparent;
+              content: " ";
+            }
+          
+          }
+        }
+      }
+    
+  
 
-    /* This produces the actual box around each item */
-    .timeline > li > .timeline-panel {
-      width: 46%;
-      background-color: $slight-gray;
-      float: left;
-      border: 1px solid #d4d4d4;
-      border-radius: 2px;
-      padding: 20px;
-      position: relative;
-      -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-    }
-    /* Below section adds depth to triangle pointer */
-    .timeline > li > .timeline-panel:before {
-      position: absolute;
-      top: 26px;
-      right: -15px;
-      display: inline-block;
-      border-top: 15px solid transparent;
-      border-left: 15px solid #ccc;
-      border-right: 0 solid #ccc;
-      border-bottom: 15px solid transparent;
-      content: " ";
-    }
-
-    /* Below section adds white triangle point to edge of timeline panels. */
-    .timeline > li > .timeline-panel:after {
-      position: absolute;
-      top: 27px;
-      right: -14px;
-      display: inline-block;
-      border-top: 14px solid transparent;
-      border-left: 14px solid #fff;
-      border-right: 0 solid #fff;
-      border-bottom: 14px solid transparent;
-      content: " ";
-    }
-
-    /* This particular section of CSS is of note - Appears to centre the glyph icon in the middle of timeline with background */
-    .timeline > li > .timeline-badge {
-      color: #fff;
-      width: 50px;
-      height: 50px;
-      line-height: 50px;
-      font-size: 1.4em;
-      text-align: center;
-      position: absolute;
-      top: 16px;
-      left: 50%;
-      margin-left: -25px;
-      background-color: #999999;
-      z-index: 100;
-      border-top-right-radius: 50%;
-      border-top-left-radius: 50%;
-      border-bottom-right-radius: 50%;
-      border-bottom-left-radius: 50%;
-    }
-
-    /* Below code 'inverts' or floats the panel to the right. */
-    .timeline > li.timeline-inverted > .timeline-panel {
-      float: right;
-    }
-    /* Below code enables the arrow pointing to the timeline itself. */
-    .timeline > li.timeline-inverted > .timeline-panel:before {
-      border-left-width: 0;
-      border-right-width: 15px;
-      left: -15px;
-      right: auto;
-    }
-
-    /* This is the highlight on the arrow */
-    .timeline > li.timeline-inverted > .timeline-panel:after {
-      border-left-width: 0;
-      border-right-width: 14px;
-      left: -14px;
-      right: auto;
-    }
-
-    /* Rest of the CSS is rather self explanatory - Just stylings and et cetera whereas above is more layout oriented. */
-    .timeline-badge.primary {
-      background-color: #2e6da4 !important;
-    }
-
-    .timeline-badge.success {
-      background-color: #3f903f !important;
-    }
-
-    .timeline-badge.warning {
-      background-color: #f0ad4e !important;
-    }
-
-    .timeline-badge.danger {
-      background-color: #d9534f !important;
-    }
-
-    .timeline-badge.info {
-      background-color: #5bc0de !important;
-    }
-    /* Removes gap above timeline title */
-    .timeline-title {
-      margin-top: 0;
-      color: inherit;
-    }
-
-    .timeline-body > p,
-    .timeline-body > ul {
-      margin-bottom: 0;
-    }
-
-    .timeline-body > p + p {
-      margin-top: 5px;
-    }
+   
   }
-}
+

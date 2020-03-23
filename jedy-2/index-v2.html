@@ -24,7 +24,7 @@
 
 	<!-- <link rel="stylesheet" href="./css/style_4grid.css"> -->
 
-	<link rel="stylesheet" href="./css/style_v2.css" type="text/css">
+	<link rel="stylesheet" href="./css/style_v3.css" type="text/css">
 	<link rel="stylesheet" href="./css/runner_button.css">
 	<link rel="stylesheet" href="./css/form.css">
 
@@ -409,19 +409,57 @@
 				</div>
 
 				<div class="col-xs-12 col-md-6 order-1 order-md-2">
-					<ul class="timeline">
-						<!-- Each entry is a list item -->
-						<li>
-
-						</li>
-
-
-					</ul>
+					<ul class="timeline">						
+					<!-- Each entry is a list item -->
+					<li>
+						<!-- Div for centre badge in middle of timeline -->
+						<div class="timeline-badge"><i class="glyphicon glyphicon glyphicon-earphone"></i></div>
+						<!-- Div for the actual 'box' the timeline entry sits in -->
+						<div class="timeline-panel">
+							<!-- Styling for the heading of said timeline and title. -->
+							<div class="timeline-heading">
+								<h4 class="timeline-title">來信/來電</h4>
+								<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Never really
+										happened</small></p>
+							</div>
+							<!-- Title div ended; Body div begins for content on the timeline panel. -->
+							<div class="timeline-body">
+								<p>Woop woop woop woop woop!</p>
+							</div>
+							<!-- Closing off the redundant divs -->
+						</div>
+					</li>
+					<!-- Close list entry! Repeating the same but using inverted styles -->
+					<li class="timeline-inverted">
+						<div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title">專人服務</h4>
+							</div>
+							<div class="timeline-body">
+								<p>Mussum ipsum I don't speak latin</p>
+							</div>
+						</div>
+					</li>
+					<!-- And don't forget to close off your redundant divs! -->
+					<li>
+						<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4 class="timeline-title">方案報價</h4>
+							</div>
+							<div class="timeline-body">
+								<p>More text to fill this box</p>
+							</div>
+						</div>
+					</li>
+			
+				</ul>
 				</div>
-
+				
 			</div>
 
-
+			
 
 		</div>
 
@@ -545,11 +583,10 @@
 
 
 	<!-- Javascript -->
-		<!-- <script
+		<script
 	src="https://code.jquery.com/jquery-3.4.1.min.js"
 	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-	crossorigin="anonymous"></script> -->
-	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	crossorigin="anonymous"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery.backstretch.min.js"></script>
 

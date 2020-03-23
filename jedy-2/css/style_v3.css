@@ -127,6 +127,13 @@ Navbar
 /* # Social menu
 ================================ */
 #top-social-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   position: absolute;
   top: 7px;
   right: 0;
@@ -1220,21 +1227,6 @@ li.layer:nth-child(12) a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   flex-wrap: wrap;
-  /* Creates vertical line in middle */
-  /* This seems to align the glyph icons down the middle to an extent. */
-  /* I'm genuinely unsure on what this does! */
-  /* Unsure on this also */
-  /* Also unsure! So confusing */
-  /* Also unsure on this malarki */
-  /* This produces the actual box around each item */
-  /* Below section adds depth to triangle pointer */
-  /* Below section adds white triangle point to edge of timeline panels. */
-  /* This particular section of CSS is of note - Appears to centre the glyph icon in the middle of timeline with background */
-  /* Below code 'inverts' or floats the panel to the right. */
-  /* Below code enables the arrow pointing to the timeline itself. */
-  /* This is the highlight on the arrow */
-  /* Rest of the CSS is rather self explanatory - Just stylings and et cetera whereas above is more layout oriented. */
-  /* Removes gap above timeline title */
 }
 
 .run-process .row-btn .btn-box {
@@ -1250,90 +1242,43 @@ li.layer:nth-child(12) a {
 }
 
 .run-process .row-btn .btn-box .running-button {
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
 }
 
-.run-process .row-btn .timeline {
+.run-process .timeline {
   list-style: none;
   padding: 20px 0 20px;
   position: relative;
   width: 80%;
 }
 
-.run-process .row-btn .timeline:before {
+.run-process .timeline:before {
   top: 0;
   bottom: 0;
   position: absolute;
   content: " ";
   width: 3px;
-  background-color: #eeeeee;
-  left: 50%;
+  background-color: black;
+  left: 0;
   margin-left: -1.5px;
 }
 
-.run-process .row-btn .timeline > li {
+.run-process .timeline li {
   margin-bottom: 20px;
   position: relative;
 }
 
-.run-process .row-btn .timeline > li:before,
-.run-process .row-btn .timeline > li:after {
+.run-process .timeline li:before, .run-process .timeline li:after {
   content: " ";
   display: table;
 }
 
-.run-process .row-btn .timeline > li:after {
+.run-process .timeline li:after {
   clear: both;
 }
 
-.run-process .row-btn .timeline > li:before,
-.run-process .row-btn .timeline > li:after {
-  content: " ";
-  display: table;
-}
-
-.run-process .row-btn .timeline > li:after {
-  clear: both;
-}
-
-.run-process .row-btn .timeline > li > .timeline-panel {
-  width: 46%;
-  background-color: #f8f8f8;
-  float: left;
-  border: 1px solid #d4d4d4;
-  border-radius: 2px;
-  padding: 20px;
-  position: relative;
-  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-}
-
-.run-process .row-btn .timeline > li > .timeline-panel:before {
-  position: absolute;
-  top: 26px;
-  right: -15px;
-  display: inline-block;
-  border-top: 15px solid transparent;
-  border-left: 15px solid #ccc;
-  border-right: 0 solid #ccc;
-  border-bottom: 15px solid transparent;
-  content: " ";
-}
-
-.run-process .row-btn .timeline > li > .timeline-panel:after {
-  position: absolute;
-  top: 27px;
-  right: -14px;
-  display: inline-block;
-  border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0 solid #fff;
-  border-bottom: 14px solid transparent;
-  content: " ";
-}
-
-.run-process .row-btn .timeline > li > .timeline-badge {
+.run-process .timeline li .timeline-badge {
   color: #fff;
   width: 50px;
   height: 50px;
@@ -1342,7 +1287,7 @@ li.layer:nth-child(12) a {
   text-align: center;
   position: absolute;
   top: 16px;
-  left: 50%;
+  left: 0;
   margin-left: -25px;
   background-color: #999999;
   z-index: 100;
@@ -1352,55 +1297,26 @@ li.layer:nth-child(12) a {
   border-bottom-left-radius: 50%;
 }
 
-.run-process .row-btn .timeline > li.timeline-inverted > .timeline-panel {
-  float: right;
+.run-process .timeline li .timeline-panel {
+  width: 46%;
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  margin-left: 45px;
 }
 
-.run-process .row-btn .timeline > li.timeline-inverted > .timeline-panel:before {
-  border-left-width: 0;
-  border-right-width: 15px;
+.run-process .timeline li .timeline-panel:before {
+  position: absolute;
+  top: 26px;
   left: -15px;
-  right: auto;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 0 solid #ccc;
+  border-right: 15px solid #ccc;
+  border-bottom: 15px solid transparent;
+  content: " ";
 }
-
-.run-process .row-btn .timeline > li.timeline-inverted > .timeline-panel:after {
-  border-left-width: 0;
-  border-right-width: 14px;
-  left: -14px;
-  right: auto;
-}
-
-.run-process .row-btn .timeline-badge.primary {
-  background-color: #2e6da4 !important;
-}
-
-.run-process .row-btn .timeline-badge.success {
-  background-color: #3f903f !important;
-}
-
-.run-process .row-btn .timeline-badge.warning {
-  background-color: #f0ad4e !important;
-}
-
-.run-process .row-btn .timeline-badge.danger {
-  background-color: #d9534f !important;
-}
-
-.run-process .row-btn .timeline-badge.info {
-  background-color: #5bc0de !important;
-}
-
-.run-process .row-btn .timeline-title {
-  margin-top: 0;
-  color: inherit;
-}
-
-.run-process .row-btn .timeline-body > p,
-.run-process .row-btn .timeline-body > ul {
-  margin-bottom: 0;
-}
-
-.run-process .row-btn .timeline-body > p + p {
-  margin-top: 5px;
-}
-/*# sourceMappingURL=style_v2.css.map */
+/*# sourceMappingURL=style_v3.css.map */
