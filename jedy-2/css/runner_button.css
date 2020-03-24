@@ -134,7 +134,7 @@
   --shadow: rgba(0, 9, 61, 0.2);
   --padding-y: 12px;
   --padding-x: 36px;
-  width: 15%;
+  width: 200px;
   margin: 0;
   padding: var(--padding-y) 0;
   font-size: 16px;
@@ -174,11 +174,6 @@
   --x: var(--default-x, 0);
 }
 
-.running-button span.active {
-  --x: var(--active-x, -100%);
-  margin-top: -23px;
-}
-
 .running-button .running {
   --scale: .64;
   --color: #fff;
@@ -200,23 +195,6 @@
   --shadow-blur: 16px;
   --default-x: 4px;
   --running-x: var(--padding-x);
-}
-
-.running-button:active {
-  --y: 1px;
-  --shadow-y: 4px;
-  --shadow-blur: 8px;
-}
-
-.running-button.active {
-  --b: var(--background-active);
-  --default-x: 100%;
-  --active-x: -12%;
-  --running-x: 108px;
-}
-
-.running-button.active:hover {
-  --b: var(--background-active-hover);
 }
 
 @-webkit-keyframes outer {

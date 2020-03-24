@@ -53,17 +53,16 @@
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li><a href="#">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#portfolio">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="#blog">Blog</a></li>
-					</li>
+					<li><a href="#top">TOP</a></li>
+					<li><a href="#why">為何選跑跑</a></li>
+					<li><a href="#who">跑跑團隊</a></li>
+					<li><a href="#items">跑跑項目</a></li>
+					<li><a href="#what">跑跑內容</a></li>
+					<li><a href="#process">跑跑流程</a></li>
 				</ul>
 			</div>
-			<div class="top-social">
+			<div class="top-social" id="top-social">
 				<ul id="top-social-menu">
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 					<li><a href="#">Register</a></li>
 					<li><a href="#">Careers</a></li>
@@ -75,7 +74,7 @@
 
 
 	<!-- Top content -->
-	<section class="banner">
+	<section class="banner" id="top">
 		<div class="wrapper">
 			<img class="banner-top" src="./img/banner_bottom.png" alt="">
 
@@ -113,8 +112,8 @@
 
 			<!-- 跑跑按鈕 -->
 			<button class="running-button">
-				<span class="default">Let's run</span>
-				<span class="active">Go</span>
+				<span class="default">一起跑吧</span>
+				<!-- <span class="active">Go</span> -->
 				<div class="running">
 					<div class="outer">
 						<div class="body">
@@ -131,7 +130,7 @@
 
 
 	<!------------- 為何選跑跑 -------------->
-	<div class="features-container section-container section-why">
+	<div class="features-container section-container section-why" id="why">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 features section-description title-left wow fadeIn">
@@ -168,8 +167,8 @@
 			</div>
 			<div class="row row-btn">
 				<button class="running-button">
-					<span class="default">Contact Us</span>
-					<span class="active">Go</span>
+					<span class="default">開始跑跑</span>
+					<!-- <span class="active">Go</span> -->
 					<div class="running">
 						<div class="outer">
 							<div class="body">
@@ -186,7 +185,7 @@
 	</div>
 
 	<!------------- 形象說明區塊 / 關於跑跑 -------------->
-	<section class="img-box">
+	<section class="img-box" id="who">
 		<div class="parallax  mt-3">
 			<div class="container">
 				<div class="row">
@@ -202,7 +201,7 @@
 
 
 	<!------------- 跑跑項目 -------------->
-	<section class="features-container section-container run-items">
+	<section class="features-container section-container run-items" id="items">
 		<div class="run-items-box">
 			<div class="container">
 				<div class="row">
@@ -221,6 +220,14 @@
 									<embed class="d-block" src="./img/item-icon.png" width="100">
 								</div>
 								<h3>數據清洗</h3>
+								<div class="item-text">
+
+									<ul>
+										<li>自動化資料庫整理</li>
+										<li>資料格式轉換</li>
+										<li>萃取重要資料</li>
+									</ul>
+								</div>
 
 							</li>
 
@@ -276,7 +283,10 @@
 
 
 	<!-- 跑跑內容 -->
-	<section class="features-container section-container run-content">
+	<section class="features-container section-container run-content" id="what">
+		<img class="mouse-hand" src="./img/mouse_hand.png" alt="">
+		<img class="keyboard" src="./img/keyboard.png" alt="">
+
 		<div class="container">
 			<div class="row ">
 				<div class="col-sm-12 more-features section-description wow fadeIn">
@@ -380,23 +390,24 @@
 
 
 	<!-- 跑跑流程 -->
-	<section class="run-process">
-		<img src="./img/section_process_back.png" alt="">
+	<section class="run-process" id="process">
+		<!-- <img class="left-deco" src="./img/left_deco.png"> -->
+
 		<div class="container">
-			
 			<div class="row">
-				<div class="col-sm-12 more-features section-description text-left wow fadeIn">
+				<div class="more-features section-description text-center wow fadeIn">
 					<h2><strong>跑跑</strong>流程</h2>
 					<span>讓您隨心所欲可以跑跑</span>
 					<div class="divider-1 wow fadeInUp"><span></span></div>
 				</div>
 			</div>
 
-			<div class="row row-btn">
-				<div class="col-xs-12 col-md-6 btn-box order-2 order-md-1">
+			<div class="process-box order-2 order-md-1">
+					<!-- <img class="search-icon" src="./img/search.png" alt=""> -->
+				
+				<div class="btn-box">
 					<button class="running-button">
-						<span class="default">Contact Us</span>
-						<span class="active">Go</span>
+						<span class="default">立即諮詢</span>
 						<div class="running">
 							<div class="outer">
 								<div class="body">
@@ -410,64 +421,64 @@
 					</button>
 				</div>
 
-				<div class="col-xs-12 col-md-6 order-1 order-md-2">
-					<ul class="timeline">						
-					<!-- Each entry is a list item -->
-					<li>
-						<!-- Div for centre badge in middle of timeline -->
-						<div class="timeline-badge"><i class="glyphicon glyphicon glyphicon-earphone"></i></div>
-						<!-- Div for the actual 'box' the timeline entry sits in -->
-						<div class="timeline-panel">
-							<!-- Styling for the heading of said timeline and title. -->
-							<div class="timeline-heading">
-								<h4 class="timeline-title">來信/來電</h4>
-								<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Never really
-										happened</small></p>
+
+
+				<div class="timeline-box order-1 order-md-2">
+					<ul class="timeline">
+						<!-- Each entry is a list item -->
+						<li>
+							<!-- Div for centre badge in middle of timeline -->
+							<div class="timeline-badge"><i class="glyphicon glyphicon glyphicon-earphone"></i></div>
+							<!-- Div for the actual 'box' the timeline entry sits in -->
+							<div class="timeline-panel">
+								<!-- Styling for the heading of said timeline and title. -->
+								<div class="timeline-heading">
+									<h4 class="timeline-title">來信/來電</h4>
+									<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Never
+											really
+											happened</small></p>
+								</div>
+								<!-- Title div ended; Body div begins for content on the timeline panel. -->
+								<div class="timeline-body">
+									<p>Woop woop woop woop woop!</p>
+								</div>
+								<!-- Closing off the redundant divs -->
 							</div>
-							<!-- Title div ended; Body div begins for content on the timeline panel. -->
-							<div class="timeline-body">
-								<p>Woop woop woop woop woop!</p>
+						</li>
+						<!-- Close list entry! Repeating the same but using inverted styles -->
+						<li class="timeline-inverted">
+							<div class="timeline-badge warning"><i class="glyphicon glyphicon-user"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 class="timeline-title">專人服務</h4>
+								</div>
+								<div class="timeline-body">
+									<p>Mussum ipsum I don't speak latin</p>
+								</div>
 							</div>
-							<!-- Closing off the redundant divs -->
-						</div>
-					</li>
-					<!-- Close list entry! Repeating the same but using inverted styles -->
-					<li class="timeline-inverted">
-						<div class="timeline-badge warning"><i class="glyphicon glyphicon-user"></i></div>
-						<div class="timeline-panel">
-							<div class="timeline-heading">
-								<h4 class="timeline-title">專人服務</h4>
+						</li>
+						<!-- And don't forget to close off your redundant divs! -->
+						<li>
+							<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 class="timeline-title">方案報價</h4>
+								</div>
+								<div class="timeline-body">
+									<p>More text to fill this box</p>
+								</div>
 							</div>
-							<div class="timeline-body">
-								<p>Mussum ipsum I don't speak latin</p>
-							</div>
-						</div>
-					</li>
-					<!-- And don't forget to close off your redundant divs! -->
-					<li>
-						<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
-						<div class="timeline-panel">
-							<div class="timeline-heading">
-								<h4 class="timeline-title">方案報價</h4>
-							</div>
-							<div class="timeline-body">
-								<p>More text to fill this box</p>
-							</div>
-						</div>
-					</li>
-			
-				</ul>
+						</li>
+
+					</ul>
 				</div>
-				
+
+
 			</div>
 
-			
+
 
 		</div>
-
-
-
-
 
 		<!-- Timeline is a styled unordered list -->
 
@@ -475,11 +486,78 @@
 
 		</div>
 
-
-
-
-
 	</section>
+
+<!-- About us -->
+	<div class="about-us-container section-container">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 about-us section-description wow fadeIn">
+					<h2><strong>About</strong> us</h2>
+					<div class="divider-1 wow fadeInUp"><span></span></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 about-us-box wow fadeInUp">
+					<div class="about-us-photo">
+						<img src="assets/img/about/1.jpg" alt="" data-at2x="assets/img/about/1.jpg">
+					</div>
+					<h3>Jim Black</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+					<div class="about-us-social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-dribbble"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+					</div>
+				</div>
+				<div class="col-sm-4 about-us-box wow fadeInDown">
+					<div class="about-us-photo">
+						<img src="assets/img/about/2.jpg" alt="" data-at2x="assets/img/about/2.jpg">
+					</div>
+					<h3>Tom Brown</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+					<div class="about-us-social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-dribbble"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+					</div>
+				</div>
+				<div class="col-sm-4 about-us-box wow fadeInUp">
+					<div class="about-us-photo">
+						<img src="assets/img/about/3.jpg" alt="" data-at2x="assets/img/about/3.jpg">
+					</div>
+					<h3>Sarah Green</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+					<div class="about-us-social">
+						<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-dribbble"></i></a>
+						<a href="#"><i class="fa fa-twitter"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 footer-social">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-dribbble"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-pinterest"></i></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12 footer-copyright">
+					&copy; Jedy Bootstrap Template by <a href="http://azmind.com">Azmind</a>.
+				</div>
+			</div>
+		</div>
+	</footer>
+
 
 	<!-- contact form -->
 	<div class="form-popup">
@@ -488,7 +566,7 @@
 			<form id="my-form" novalidate="novalidate">
 				<div class="row">
 					<div class="col-md-12 text-center">
-						<h1 class="form-title">開始跑跑</h1>
+						<h2 class="form-title">聯絡專人服務</h2>
 					</div>
 				</div>
 				<div class="row">
@@ -542,37 +620,40 @@
 						<label for="email">資料領域</label>
 						<input type="text" class="form-control" id="email" name="email" required="">
 					</div>
-					<div class="form-group col-md-4">
-						<label for="exampleFormControlSelect1 d-flex">可聯繫時間
-							<div class="form-check form-check-inline">
+					<div class="form-group col-md-4 ">
+						<label for="exampleFormControlSelect1 ">可聯繫時間　
 								<input class="form-check-input" type="radio" name="date" id="inlineRadio1"
 									value="option1">
 								<label class="form-check-label" for="inlineRadio1">平日</label>
-							</div>
-							<div class="form-check form-check-inline">
+
 								<input class="form-check-input" type="radio" name="date" id="inlineRadio2"
 									value="option2">
 								<label class="form-check-label" for="inlineRadio2">假日</label>
-							</div>
 						</label>
-					</div>
-					<div class="row">
-						<div class="form-group col-md-4">
-							<label for="email">E-mail</label>
-							<input type="text" class="form-control" id="email" name="email" required="">
-						</div>
-						<div class="form-group col-md-4">
-							<label for="exampleFormControlTextarea1">研究目的（簡述）</label>
-							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						<div class="form-check form-check-inline">
+							<input type="time" class="form-time" id="time1" name="time1" required="">
+							<span>～</span>
+							<input type="time" class="form-time" id="time2" name="time2" required="">
 						</div>
 					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-md-4">
+						<label for="email">E-mail</label>
+						<input type="text" class="form-control" id="email" name="email" required="">
+					</div>
+					<div class="form-group col-md-8">
+						<label for="exampleFormControlTextarea1">研究目的（簡述）</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div>
+				</div>
 
-					<div class="form-check">
-						<label>
-							<input type="checkbox" name="formcheck" checked="" class="checkfz" required=""> Submit<br>
-						</label>
-					</div>
-					<button type="submit" class="btn send-form">Send</button>
+				<!-- <div class="form-check">
+					<label>
+						<input type="checkbox" name="formcheck" checked="" class="checkfz" required=""> 同意<br>
+					</label>
+				</div> -->
+				<button type="submit" class="btn send-form">Send</button>
 			</form>
 		</div>
 	</div>
@@ -585,10 +666,8 @@
 
 
 	<!-- Javascript -->
-		<script
-	src="https://code.jquery.com/jquery-3.4.1.min.js"
-	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-	crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
 	<script src="assets/js/jquery.backstretch.min.js"></script>
 

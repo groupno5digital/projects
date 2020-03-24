@@ -4,6 +4,9 @@ $black: #333;
 $active: #e74c3c;
 $green: #66d6c5;
 $yellow: #f4de7f;
+$slight-yellow: cornsilk;
+// $strong-yellow:#FEC804;
+$strong-yellow:#FCBC49;
 $slight-gray: #f8f8f8;
 
 /*================================================================
@@ -47,6 +50,16 @@ Navbar
 
 .nav {
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    float: right;
+    background-color: $slight-yellow;
+    opacity: 0.8;
+
+    li {
+      font-size: 1rem;
+    }
+  }
 }
 
 .navbar .navbar-nav li a {
@@ -68,10 +81,6 @@ Navbar
   }
 }
 
-#top-social-menu {
-  display: none;
-}
-
 @media (min-width: 768px) {
   .navbar {
     height: 50px;
@@ -82,10 +91,6 @@ Navbar
     // margin-top: 35px;
     margin-left: 50px;
     line-height: 50px;
-  }
-
-  #top-social-menu {
-    display: initial;
   }
 
   /* Navbar when scrolled */
@@ -138,6 +143,14 @@ Navbar
 
 /* # Social menu
 ================================ */
+#top-social {
+  @media (max-width: 996px) {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
 
 #top-social-menu {
   display: flex;
@@ -151,6 +164,15 @@ Navbar
   list-style: none;
   color: #2e1c05;
   transition: all 0.2s ease-out;
+
+  @media (max-width: 994px) {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    right: 80px;
+  }
 }
 
 #top-social-menu li {
@@ -429,8 +451,8 @@ Navbar
     overflow: hidden;
     position: relative;
     z-index: 2;
-    background: rgb(224, 183, 2);
-
+    background: $strong-yellow;
+    //右上往左下
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 3vw), 0 100%);
 
     .banner-top {
@@ -455,9 +477,9 @@ Navbar
         width: 20%;
         position: absolute;
         left: 40%;
-        span {
-          font-size: 1rem;
-        }
+        // span {
+        //   font-size: 1rem;
+        // }
       }
 
       @media (max-width: 767px) {
@@ -717,16 +739,14 @@ li.layer:nth-child(12) a {
 
       .running-button {
         @media (max-width: 960px) {
-          width: 20%;
           position: absolute;
           left: 40%;
-          span {
-            font-size: 1rem;
-          }
+          // span {
+          //   font-size: 1rem;
+          // }
         }
 
         @media (max-width: 767px) {
-          width: 30%;
           position: absolute;
           left: 35%;
         }
@@ -824,18 +844,18 @@ li.layer:nth-child(12) a {
     width: 100%;
     text-align: center;
 
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
     position: relative;
     z-index: 2;
-    background: cornsilk;
+    background: $slight-yellow;
     // 由左上往右下斜
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 3vw));
 
     .row {
-      margin-bottom: 30px;
+      margin-bottom: 30px;      
 
       @media (max-width: 768px) {
         margin-right: unset;
@@ -853,7 +873,7 @@ li.layer:nth-child(12) a {
         @media (max-width: 768px) {
           grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
         }
-        @media (max-width: 320px) {
+        @media (max-width: 576px) {
           grid-template-columns: repeat(auto-fit, minmax(98%, 1fr));
         }
 
@@ -875,7 +895,7 @@ li.layer:nth-child(12) a {
           padding: 20px;
 
           &:hover {
-            background: rgb(169, 162, 212);
+            background: rgb(185, 180, 219);
 
             border-top: 8px solid black;
             border-radius: 8px/2;
@@ -883,7 +903,9 @@ li.layer:nth-child(12) a {
             transition: all 0.2s ease-out;
           }
           &:hover .item-cell {
-            background: rgb(169, 162, 212);
+            background: rgb(185, 180, 219);
+            transition: all 0.2s ease-out;
+
           }
 
           h3 {
@@ -931,24 +953,44 @@ li.layer:nth-child(12) a {
 // 跑跑內容
 //======================================
 .run-content {
-  // height: 100vh;
   width: 100%;
-  // background-color: #f8f8f8;
   background-color: $green;
+  position: relative;
+
+  //右上往左下
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 3vw), 0 100%);
+
   color: white;
 
   text-align: center;
 
+  .container {
+    padding-bottom: 80px;
+  }
+
+  .mouse-hand {
+    width: 13%;
+    position: absolute;
+    right: 3%;
+    bottom: 0;
+  }
+  .keyboard{
+    width: 20%;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+  }
   @media (max-width: 576px) {
     .pull-right {
       float: unset !important;
     }
+   
   }
 
   .tab-box {
     margin: 0 auto;
-    width: 80%;
-    height: 400px;
+    width: 70%;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -957,7 +999,7 @@ li.layer:nth-child(12) a {
 
     @media (max-width: 576px) {
       width: 80%;
-      height: 80vh;
+      height: 50vh;
       display: flex;
       flex-direction: column;
     }
@@ -1122,7 +1164,7 @@ li.layer:nth-child(12) a {
   #fourth {
     position: absolute;
     // height: 70%;
-    width: 50%;
+    width: 30%;
     transition: all 0.6s ease-in-out;
     margin-top: -350px;
     opacity: 0;
@@ -1145,6 +1187,7 @@ li.layer:nth-child(12) a {
       font-weight: 500;
       padding-left: 30px;
       padding-right: 30px;
+      font-size: 1rem;
     }
   }
 
@@ -1163,55 +1206,89 @@ li.layer:nth-child(12) a {
 // =========================================
 .run-process {
   position: relative;
+  padding-bottom: 80px;
 
-  img{
-    position: absolute;
-    right: 0;
-    height: 100%;
+
+  // .left-deco {
+  //   position: absolute;
+  //   left: 5%;
+  //   top: 30vh;
+  //   height: 50%;
+  //   opacity: 0.8;
+  // }
+
+  .row {
+    margin: 50px 0px 5% 5%;
   }
 
-
-
-  .row-btn {
+  .process-box {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    flex-wrap: wrap;
+    background: $slight-gray;
+    border-radius: 50px;
+    padding: 20px;
+    // opacity: 0.5;
+    background-image: url("../img/grey_back.png");
+    background-position: center;
+    background-size: cover;
+    // background-attachment: fixed;
 
-    .btn-box {
-      display: flex;
+    @media (max-width: 768px) {
       justify-content: center;
+      flex-direction: column-reverse;
+    }
+
+    // 左邊按鈕
+    .btn-box {
+      height: 100%;
+      width: 45%;
+      display: flex;
       align-items: center;
+      justify-content: center;
+
+      @media (max-width: 768px) {
+        width: 90%;
+      }
 
       .running-button {
-        width: 40%;
+        width: 200px;
         margin: 0 auto;
       }
     }
-  }
 
-    .timeline {
-      list-style: none;
-      padding: 20px 0 20px;
-      position: relative;
-      width: 80%;
+    // 右邊timeline
+    .timeline-box {
+      width: 48%;
+      float: right;
 
-      &:before {
-        top: 0;
-        bottom: 0;
-        position: absolute;
-        content: " ";
-        width: 3px;
-        background-color: black;
-        left: 0;
-        margin-left: -1.5px;
+      @media (max-width: 768px) {
+        width: 90%;
+        margin-left: 5%;
       }
-      li {
-        
+
+      .timeline {
+        list-style: none;
+        padding: 20px 0 20px;
+        position: relative;
+        width: 80%;
+
+        &:before {
+          top: 0;
+          bottom: 0;
+          position: absolute;
+          content: " ";
+          width: 2px;
+          background-color: $strong-yellow;
+          left: 0;
+          margin-left: -1.5px;
+        }
+        li {
           margin-bottom: 20px;
           position: relative;
-        
+
           &:before,
           &:after {
             content: " ";
@@ -1233,7 +1310,7 @@ li.layer:nth-child(12) a {
             top: 16px;
             left: 0;
             margin-left: -25px;
-            background-color: #999999;
+            background-color: $strong-yellow;
             z-index: 100;
             border-top-right-radius: 50%;
             border-top-left-radius: 50%;
@@ -1242,7 +1319,7 @@ li.layer:nth-child(12) a {
           }
 
           .timeline-panel {
-            width: 46%;
+            width: 100%;
             // float: left;
             border: 1px solid #d4d4d4;
             border-radius: 2px;
@@ -1251,7 +1328,11 @@ li.layer:nth-child(12) a {
             -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
             box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
             margin-left: 45px;
-            background-color: $slight-gray;
+            background-color:white;
+
+            h4{
+              color:#FD9301;
+            }
 
             &:before {
               position: absolute;
@@ -1264,13 +1345,9 @@ li.layer:nth-child(12) a {
               border-bottom: 15px solid transparent;
               content: " ";
             }
-          
           }
         }
       }
-    
-  
-
-   
+    }
   }
-
+}

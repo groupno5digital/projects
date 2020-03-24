@@ -111,7 +111,7 @@
     --shadow: #{rgba(#00093D, .2)};
     --padding-y: 12px;
     --padding-x: 36px;
-    width: 15%;
+    width: 200px;
     margin: 0;
     padding: var(--padding-y) 0;
     font-size: 16px;
@@ -137,10 +137,10 @@
         &.default {
             --x: var(--default-x, 0);
         }
-        &.active {
-            --x: var(--active-x, -100%);
-            margin-top: -23px;
-        }
+        // &.active {
+        //     --x: var(--active-x, -100%);
+        //     margin-top: -23px;
+        // }
     }
     .running {
         --scale: .64;
@@ -159,20 +159,20 @@
         --default-x: 4px;
         --running-x: var(--padding-x);
     }
-    &:active {
-        --y: 1px;
-        --shadow-y: 4px;
-        --shadow-blur: 8px;
-    }
-    &.active {
-        --b: var(--background-active);
-        --default-x: 100%;
-        --active-x: -12%;
-        --running-x: 108px;
-        &:hover {
-            --b: var(--background-active-hover);
-        }
-    }
+    // &:active {
+    //     --y: 1px;
+    //     --shadow-y: 4px;
+    //     --shadow-blur: 8px;
+    // }
+    // &.active {
+    //     --b: var(--background-active);
+    //     --default-x: 100%;
+    //     --active-x: -12%;
+    //     --running-x: 108px;
+    //     &:hover {
+    //         --b: var(--background-active-hover);
+    //     }
+    // }
 }
 
 @keyframes outer {
