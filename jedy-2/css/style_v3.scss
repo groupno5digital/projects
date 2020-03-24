@@ -1162,6 +1162,16 @@ li.layer:nth-child(12) a {
 // Steps 跑跑流程
 // =========================================
 .run-process {
+  position: relative;
+
+  img{
+    position: absolute;
+    right: 0;
+    height: 100%;
+  }
+
+
+
   .row-btn {
     display: flex;
     justify-content: center;
@@ -1241,6 +1251,7 @@ li.layer:nth-child(12) a {
             -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
             box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
             margin-left: 45px;
+            background-color: $slight-gray;
 
             &:before {
               position: absolute;

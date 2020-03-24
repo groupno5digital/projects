@@ -1214,6 +1214,16 @@ li.layer:nth-child(12) a {
   transition: all 0.6s ease-in-out;
 }
 
+.run-process {
+  position: relative;
+}
+
+.run-process img {
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+
 .run-process .row-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1306,6 +1316,7 @@ li.layer:nth-child(12) a {
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   margin-left: 45px;
+  background-color: #f8f8f8;
 }
 
 .run-process .timeline li .timeline-panel:before {
