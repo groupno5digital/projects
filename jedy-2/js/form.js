@@ -3,6 +3,10 @@ $(document).ready(function() {
 	$('.running-button').click(function() {
 		$('.form-popup').show();
 	});
+	$('.contact_btn').click(function() {
+		$('.form-popup').show();
+	});
+
 	$('.close-form').click(function() {
 		$('.form-popup').hide();
 	});

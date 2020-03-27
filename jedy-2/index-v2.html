@@ -13,34 +13,32 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
 	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	
 	<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/form-elements.css">
 	<link rel="stylesheet" href="assets/css/style_2.css">
-	<link rel="stylesheet" href="assets/css/media-queries.css">
-
-
+	<!-- <link rel="stylesheet" href="assets/css/media-queries.css"> -->
 
 
 	<!-- <link rel="stylesheet" href="./css/style_4grid.css"> -->
 
-	<link rel="stylesheet" href="./css/style_v3.css" type="text/css">
+	<link rel="stylesheet" href="./css/style_v4.css" type="text/css">
 	<link rel="stylesheet" href="./css/runner_button.css">
 	<link rel="stylesheet" href="./css/form.css">
+	<link rel="stylesheet" href="./css/navbar-v2.css">
+
 
 
 </head>
 
 <body>
 
-	<!-- Loader -->
-	<!-- <div class="loader">
-		<div class="loader-img"></div>
-	</div> -->
 
 	<!-- Top menu -->
-	<nav id="main-navbar" class="navbar navbar-default navbar-fixed-top">
-		<div class="container navbar-container">
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
 					aria-expanded="false" aria-controls="navbar">
@@ -49,10 +47,10 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<!-- <a class="navbar-brand" href="#"></a> -->
+				<a class="navbar-brand" href="#">數據跑跑</a>
 			</div>
-			<div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#top">TOP</a></li>
 					<li><a href="#why">為何選跑跑</a></li>
 					<li><a href="#who">跑跑團隊</a></li>
@@ -61,13 +59,7 @@
 					<li><a href="#process">跑跑流程</a></li>
 				</ul>
 			</div>
-			<div class="top-social" id="top-social">
-				<ul id="top-social-menu">
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#">Register</a></li>
-					<li><a href="#">Careers</a></li>
-				</ul>
-			</div>
+			<!--/.nav-collapse -->
 		</div>
 	</nav>
 
@@ -403,8 +395,8 @@
 			</div>
 
 			<div class="process-box order-2 order-md-1">
-					<!-- <img class="search-icon" src="./img/search.png" alt=""> -->
-				
+				<!-- <img class="search-icon" src="./img/search.png" alt=""> -->
+
 				<div class="btn-box">
 					<button class="running-button">
 						<span class="default">立即諮詢</span>
@@ -488,7 +480,7 @@
 
 	</section>
 
-<!-- About us -->
+	<!-- About us -->
 	<div class="about-us-container section-container">
 		<div class="container">
 			<div class="row">
@@ -539,23 +531,37 @@
 	</div>
 
 	<!-- Footer -->
-	<footer>
+	<footer class="footer-box">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 footer-social">
+				<div class="col-sm-12 col-md-6 footer-social">
 					<a href="#"><i class="fa fa-facebook"></i></a>
 					<a href="#"><i class="fa fa-dribbble"></i></a>
 					<a href="#"><i class="fa fa-twitter"></i></a>
 					<a href="#"><i class="fa fa-instagram"></i></a>
 					<a href="#"><i class="fa fa-pinterest"></i></a>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-sm-12 footer-copyright">
-					&copy; Jedy Bootstrap Template by <a href="http://azmind.com">Azmind</a>.
+				<div class="col-sm-12 col-md-6 footer-social">
+					<div class="contact-box">
+						<div class="contact-li contact-phone">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							<h4>0988-188-168<h4>
+
+						</div>
+						<div class="contact-li contact-email">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<h4> nininiyou@gmail.com<h4></h4>
+						</div>
+						</ul>
+					</div>
+
+				</div>
+				<div class="row">
+					<div class="col-sm-12 footer-copyright">
+						COPYRIGHT &copy; 數據跑跑. ALL OF THE RIGHTS RESERVED </a>.
+					</div>
 				</div>
 			</div>
-		</div>
 	</footer>
 
 
@@ -587,6 +593,26 @@
 							<label class="form-check-label" for="inlineRadio2">先生</label>
 						</div>
 					</div>
+					<div class="form-group col-md-4">
+						<label for="phone">電話</label>
+						<input type="text" class="form-control" id="phone" name="phone" required="">
+					</div>
+
+					<div class="form-group col-md-4">
+						<label for="email">E-mail</label>
+						<input type="text" class="form-control" id="email" name="email" required="">
+					</div>
+
+				</div>
+
+
+				<div class="row">
+
+					<div class="form-group col-md-4">
+						<label for="category">資料領域</label>
+						<input type="text" class="form-control" id="category" name="category" required="">
+					</div>
+
 
 					<div class="form-group col-md-4">
 						<label for="exampleFormControlSelect1">您是否有初步想法？</label>
@@ -610,41 +636,28 @@
 						</select>
 					</div>
 
+
 				</div>
 				<div class="row">
-					<div class="form-group col-md-4">
-						<label for="phone">電話</label>
-						<input type="text" class="form-control" id="phone" name="phone" required="">
+
+					<div class="form-group col-md-8">
+						<label for="exampleFormControlTextarea1">研究目的（簡述）</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 					</div>
-					<div class="form-group col-md-4">
-						<label for="email">資料領域</label>
-						<input type="text" class="form-control" id="email" name="email" required="">
-					</div>
+
 					<div class="form-group col-md-4 ">
 						<label for="exampleFormControlSelect1 ">可聯繫時間　
-								<input class="form-check-input" type="radio" name="date" id="inlineRadio1"
-									value="option1">
-								<label class="form-check-label" for="inlineRadio1">平日</label>
+							<input class="form-check-input" type="radio" name="date" id="inlineRadio1" value="option1">
+							<label class="form-check-label" for="inlineRadio1">平日</label>
 
-								<input class="form-check-input" type="radio" name="date" id="inlineRadio2"
-									value="option2">
-								<label class="form-check-label" for="inlineRadio2">假日</label>
+							<input class="form-check-input" type="radio" name="date" id="inlineRadio2" value="option2">
+							<label class="form-check-label" for="inlineRadio2">假日</label>
 						</label>
 						<div class="form-check form-check-inline">
 							<input type="time" class="form-time" id="time1" name="time1" required="">
 							<span>～</span>
 							<input type="time" class="form-time" id="time2" name="time2" required="">
 						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="form-group col-md-4">
-						<label for="email">E-mail</label>
-						<input type="text" class="form-control" id="email" name="email" required="">
-					</div>
-					<div class="form-group col-md-8">
-						<label for="exampleFormControlTextarea1">研究目的（簡述）</label>
-						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 					</div>
 				</div>
 
@@ -678,14 +691,44 @@
 
 	<!-- navbar scroll event -->
 	<script>
-		$(window).scroll(function () {
-			var sc = $(window).scrollTop()
-			if (sc > 100) {
-				$("#main-navbar").addClass("navbar-scroll")
-			}
-			else {
-				$("#main-navbar").removeClass("navbar-scroll")
-			}
+		$(document).ready(function () {
+
+			// Transition effect for navbar and back-to-top icon
+			$(window).scroll(function () {
+				// checks if window is scrolled more than 500px, adds/removes solid class
+				if ($(this).scrollTop() > 100) {
+					$('.navbar').addClass('solid');
+					$('.back-to-top').addClass('visible');
+				} else {
+					$('.navbar').removeClass('solid');
+					$('.back-to-top').removeClass('visible');
+				}
+
+			});
+
+
+			// Scrolling effect for Arrow icons
+			$("#scrollIcon").click(function (e) {
+				e.preventDefault();
+				$.scrollTo($("#about"), 1000);
+			});
+			$("#nav-about").click(function (e) {
+				e.preventDefault();
+				$.scrollTo($("#about"), 1000);
+			});
+			$("#nav-portfolio").click(function (e) {
+				e.preventDefault();
+				$.scrollTo($("#portfolio"), 1000);
+			});
+			$("#nav-contact").click(function (e) {
+				e.preventDefault();
+				$.scrollTo($("#contact"), 1000);
+			});
+			$(".navbar-brand").click(function (e) {
+				e.preventDefault();
+				$.scrollTo(0, 1000);
+			});
+
 		});
 	</script>
 
