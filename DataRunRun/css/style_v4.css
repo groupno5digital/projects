@@ -27,6 +27,10 @@ body strong {
   font-weight: 1000;
 }
 
+.all {
+  width: 100%;
+}
+
 .scene {
   padding: 0;
   margin: 0;
