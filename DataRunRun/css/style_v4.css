@@ -12,7 +12,7 @@ body {
           box-sizing: border-box;
   font-family: "Comfortaa", sans-serif, "微軟正黑體";
   color: black;
-  background-color: cornsilk;
+  background-color: black;
 }
 
 body a {
@@ -29,6 +29,7 @@ body strong {
 
 .all {
   width: 100%;
+  background-color: black;
 }
 
 .scene {
@@ -222,31 +223,29 @@ body strong {
 
 .banner .wrapper .running-button {
   position: absolute;
-  left: 42%;
+  left: 43%;
   bottom: 8%;
 }
 
 @media (max-width: 960px) {
   .banner .wrapper .running-button {
-    width: 20%;
+    width: 200px;
     position: absolute;
-    left: 40%;
+    left: 43%;
   }
 }
 
 @media (max-width: 8px) {
   .banner .wrapper .running-button {
-    width: 30%;
     position: absolute;
-    left: 35%;
+    left: 33%;
   }
 }
 
 @media (max-width: 576px) {
   .banner .wrapper .running-button {
-    width: 40%;
     position: absolute;
-    left: 30%;
+    left: 33%;
   }
 }
 
@@ -522,23 +521,8 @@ li.layer:nth-child(12) a {
 
 @media (max-width: 960px) {
   .section-why .container .row-btn .running-button {
-    position: absolute;
-    left: 40%;
-  }
-}
-
-@media (max-width: 8px) {
-  .section-why .container .row-btn .running-button {
-    position: absolute;
-    left: 35%;
-  }
-}
-
-@media (max-width: 576px) {
-  .section-why .container .row-btn .running-button {
-    width: 40%;
-    position: absolute;
-    left: 30%;
+    position: unset;
+    left: unset;
   }
 }
 

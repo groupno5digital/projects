@@ -21,8 +21,8 @@ body {
   // font: 18px Arial, sans-serif;
   font-family: "Comfortaa", sans-serif, "微軟正黑體";
   color: black;
-  background-color: cornsilk;
-  // background-color: black;
+  // background-color: cornsilk;
+  background-color: black;
 
   a {
     text-decoration: none;
@@ -39,6 +39,7 @@ body {
 
 .all {
   width: 100%;
+  background-color: black;
 }
 
 .scene {
@@ -292,28 +293,23 @@ body {
 
     .running-button {
       position: absolute;
-      left: 42%;
+      left: 43%;
       bottom: 8%;
 
       @media (max-width: 960px) {
-        width: 20%;
+        width: 200px;
         position: absolute;
-        left: 40%;
-        // span {
-        //   font-size: 1rem;
-        // }
+        left: 43%;
       }
 
       @media (max-width: 8px) {
-        width: 30%;
         position: absolute;
-        left: 35%;
+        left: 33%;
       }
 
       @media (max-width: 576px) {
-        width: 40%;
         position: absolute;
-        left: 30%;
+        left: 33%;
       }
     }
   }
@@ -561,23 +557,21 @@ li.layer:nth-child(12) a {
 
       .running-button {
         @media (max-width: 960px) {
-          position: absolute;
-          left: 40%;
-          // span {
-          //   font-size: 1rem;
-          // }
+          position: unset;
+          left: unset;
+        
         }
 
-        @media (max-width: 8px) {
-          position: absolute;
-          left: 35%;
-        }
+        // @media (max-width: 8px) {
+        //   position: absolute;
+        //   left: 35%;
+        // }
 
-        @media (max-width: 576px) {
-          width: 40%;
-          position: absolute;
-          left: 30%;
-        }
+        // @media (max-width: 576px) {
+        //   width: 40%;
+        //   position: absolute;
+        //   left: 30%;
+        // }
       }
     }
   }
