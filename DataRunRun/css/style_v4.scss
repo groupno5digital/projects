@@ -21,8 +21,7 @@ body {
   // font: 18px Arial, sans-serif;
   font-family: "Comfortaa", sans-serif, "微軟正黑體";
   color: black;
-  // background-color: cornsilk;
-  background-color: black;
+  background-color: cornsilk;
 
   a {
     text-decoration: none;
@@ -39,7 +38,7 @@ body {
 
 .all {
   width: 100%;
-  background-color: black;
+  // background-color: black;
 }
 
 .scene {
@@ -299,7 +298,7 @@ body {
       @media (max-width: 960px) {
         width: 200px;
         position: absolute;
-        left: 43%;
+        left: 36%;
       }
 
       @media (max-width: 8px) {

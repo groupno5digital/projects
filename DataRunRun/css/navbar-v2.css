@@ -65,11 +65,27 @@ a:focus {
   transition: background-color 1s ease 0s;
 }
 
+@media (max-width: 768px) {
+  .navbar .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .navbar .container li {
+    margin-left: 15px;
+  }
+}
+
 .navbar-brand {
   display: none;
   margin-top: 10px;
   color: #333;
   font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    margin-left: 15px;
+  }
 }
 
 .navbar-default .navbar-nav > li > a {

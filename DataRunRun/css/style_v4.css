@@ -12,7 +12,7 @@ body {
           box-sizing: border-box;
   font-family: "Comfortaa", sans-serif, "微軟正黑體";
   color: black;
-  background-color: black;
+  background-color: cornsilk;
 }
 
 body a {
@@ -29,7 +29,6 @@ body strong {
 
 .all {
   width: 100%;
-  background-color: black;
 }
 
 .scene {
@@ -231,7 +230,7 @@ body strong {
   .banner .wrapper .running-button {
     width: 200px;
     position: absolute;
-    left: 43%;
+    left: 36%;
   }
 }
 

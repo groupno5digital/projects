@@ -71,6 +71,17 @@ a:focus {
   margin-bottom: 0;
   border-radius: 0;
   transition: background-color 1s ease 0s;
+
+  @media (max-width: 768px) {
+    .container {
+      padding-right: 0;
+      padding-left: 0;
+
+      li {
+        margin-left: 15px;
+      }
+    }
+  }
 }
 
 .navbar-brand {
@@ -78,6 +89,10 @@ a:focus {
   margin-top: 10px;
   color: $black;
   font-weight: 400;
+
+  @media (max-width: 768px) {
+    margin-left: 15px;
+  }
 }
 
 .navbar-default .navbar-nav > li > a {
